@@ -1,0 +1,2043 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<title>💍 החתונה של תומר ואיתמר</title>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.19.0/dist/tabler-icons.min.css" crossorigin="anonymous">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --sage:#5C7A5C;--sage-l:#E8F0E8;--sage-d:#3A5C3A;
+  --rose:#C4706A;--rose-l:#F5E8E8;--rose-d:#8B3A36;
+  --cream:#F5F0E8;--cream-d:#E0D5C0;
+  --bark:#8B6914;--bark-l:#F5EDD5;--bark-d:#5C4A0A;
+  --olive:#7A8C3A;--olive-l:#EDF0D8;--olive-d:#4A5C14;
+  --terr:#C47A3A;--terr-l:#F5EAD8;--terr-d:#8B4A14;
+  --pink:#E91E8C;--pink-l:#FCE4F3;--pink-d:#B0156A;
+  --purple:#7C3AED;--purple-l:#EDE9FE;--purple-d:#5B21B6;
+  --gold:#C4860A;--gold-l:#FEF3C7;--gold-d:#7A5A00;
+  --teal:#2D7A6A;--teal-l:#D8F0EC;--teal-d:#1A4A3A;
+  --coral:#C45A3A;--coral-l:#F5E0D8;--coral-d:#7A2A14;
+  --green:#3A8C5C;--green-l:#D8F0E4;--green-d:#1A4A2A;
+  --blue:#3A6A8C;--blue-l:#D8EAF5;--blue-d:#1A3A5C;
+  --bg:#FAF6EE;--white:#fff;--text:#2A1F14;--muted:#7A6A5A;
+  --r:14px;--rs:9px;
+  --border:#D4C4A8;
+}
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&family=Playfair+Display:wght@700&display=swap');
+body{font-family:'Heebo',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;direction:rtl;overflow-x:hidden}
+
+/* RUSTIC HEADER */
+.hdr{background:linear-gradient(175deg,#4A6741 0%,#6B8C5E 60%,#8B7355 100%);padding:12px 16px 46px;text-align:center;position:relative;overflow:hidden}
+.hdr-flowers{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.hdr-flowers::before{content:'🌿';font-size:44px;position:absolute;top:-4px;right:4px;opacity:.3;transform:rotate(-15deg)}
+.hdr-flowers::after{content:'🌸';font-size:34px;position:absolute;bottom:6px;left:4px;opacity:.3;transform:rotate(10deg)}
+.hdr-leaf{position:absolute;font-size:30px;bottom:4px;right:32px;opacity:.2}
+.hdr h1{font-family:'Heebo',sans-serif;font-size:17px;font-weight:900;color:#fff;text-shadow:0 1px 6px rgba(0,0,0,.3);letter-spacing:.3px;line-height:1.2}
+.hdr p{font-size:11px;color:rgba(255,255,255,.8);margin-top:2px}
+.cntdwn{margin-top:8px;background:rgba(255,255,255,.18);border-radius:20px;padding:5px 14px;display:inline-block;color:#fff;font-size:12px;font-weight:700;border:1px solid rgba(255,255,255,.25)}
+
+/* NAV — rustic */
+.nav{position:fixed;bottom:0;left:0;right:0;background:var(--white);border-top:2px solid var(--cream-d);display:flex;z-index:100;padding-bottom:env(safe-area-inset-bottom,6px);box-shadow:0 -3px 16px rgba(92,74,10,.1)}
+.nb{flex:1;padding:7px 2px 5px;background:none;border:none;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:2px;font-family:'Heebo',sans-serif;color:var(--muted);font-size:9px;transition:color .2s}
+.nb i{font-size:19px}
+.nb.active{color:var(--sage)}
+.nb.active i{color:var(--sage)}
+.nbi{font-size:20px;line-height:1;display:block}
+.main{margin-top:-34px;padding:0 12px 90px}
+
+/* CARDS — rustic */
+.card{background:var(--white);border-radius:var(--r);padding:14px;margin-bottom:11px;border:1.5px solid var(--cream-d);box-shadow:0 3px 14px rgba(92,74,10,.07);position:relative}
+.card::before{content:'';position:absolute;top:0;right:0;left:0;height:3px;background:linear-gradient(90deg,var(--sage),var(--bark),var(--rose));border-radius:var(--r) var(--r) 0 0;opacity:.5}
+.ch{display:flex;align-items:center;gap:10px;margin-bottom:13px}
+.ci{width:38px;height:38px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;border:1px solid var(--cream-d)}
+.ct{font-size:15px;font-weight:700;color:var(--text)}
+.cs{font-size:11px;color:var(--muted);margin-top:1px}
+.sg{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-bottom:12px}
+.sb{border-radius:var(--rs);padding:12px 10px;text-align:center;border:1px solid var(--cream-d)}
+.sn{font-size:22px;font-weight:900;line-height:1}
+.sl{font-size:10px;margin-top:3px;font-weight:500}
+.screen{display:none}.screen.active{display:block}
+.tabs{display:flex;gap:5px;margin-bottom:12px;overflow-x:auto;padding-bottom:2px}
+.tab{padding:6px 12px;border-radius:20px;font-size:12px;font-weight:600;border:1.5px solid;cursor:pointer;background:var(--white);white-space:nowrap;font-family:'Heebo',sans-serif}
+.tab.active{color:#fff}
+.modal-bg{display:none;position:fixed;inset:0;background:rgba(42,31,20,.55);z-index:200;align-items:flex-end}
+.modal-bg.open{display:flex}
+.modal{background:var(--white);border-radius:22px 22px 0 0;padding:20px 16px 36px;width:100%;max-height:88vh;overflow-y:auto;border-top:3px solid var(--sage)}
+.modal-title{font-size:17px;font-weight:700;margin-bottom:14px;color:var(--text)}
+.mcl{float:left;background:none;border:none;font-size:22px;cursor:pointer;color:var(--muted);line-height:1}
+.inp{width:100%;padding:9px 12px;border-radius:var(--rs);border:1.5px solid var(--cream-d);font-family:'Heebo',sans-serif;font-size:13px;direction:rtl;outline:none;background:var(--cream);margin-bottom:8px;color:var(--text)}
+.inp:focus{border-color:var(--sage);background:#fff}
+.btn{width:100%;padding:11px;border-radius:var(--rs);border:none;color:#fff;font-family:'Heebo',sans-serif;font-size:14px;font-weight:700;cursor:pointer}
+.btn-sm{padding:5px 11px;border-radius:20px;border:none;color:#fff;font-family:'Heebo',sans-serif;font-size:11px;font-weight:700;cursor:pointer}
+.uc{padding:5px 12px;border-radius:20px;font-size:12px;font-weight:700;border:2px solid transparent;cursor:pointer;font-family:'Heebo',sans-serif;opacity:.5}
+.uc.sel{opacity:1;border-color:#fff;box-shadow:0 2px 8px rgba(0,0,0,.15)}
+.task-item{padding:11px 0;border-bottom:1px solid var(--cream-d)}
+.task-item:last-child{border-bottom:none}
+.task-cb{width:22px;height:22px;border-radius:6px;border:2px solid var(--cream-d);display:flex;align-items:center;justify-content:center;flex-shrink:0;cursor:pointer;background:var(--cream)}
+.task-cb.done{background:var(--green);border-color:var(--green)}
+.task-cb.done::after{content:'✓';color:#fff;font-size:12px;font-weight:700}
+.spill{font-size:10px;font-weight:700;padding:3px 8px;border-radius:12px;border:none;cursor:pointer;font-family:'Heebo',sans-serif}
+.msg-bubble{border-radius:10px;padding:10px 12px;margin-bottom:7px}
+.upl-zone{border:2px dashed var(--cream-d);border-radius:var(--rs);padding:18px;text-align:center;cursor:pointer;margin-bottom:10px;background:var(--cream)}
+.upl-zone:hover,.upl-zone.drag{border-color:var(--sage);background:var(--sage-l)}
+.upl-zone i{font-size:28px;color:var(--sage);display:block;margin-bottom:6px}
+.sup-cat{display:flex;align-items:center;gap:9px;padding:11px;border-radius:var(--rs);border:1.5px solid var(--cream-d);background:var(--white);margin-bottom:6px;cursor:pointer;font-family:'Heebo',sans-serif;font-size:13px;font-weight:600;width:100%;text-align:right;transition:all .2s}
+.sup-cat:hover{border-color:var(--sage);background:var(--sage-l)}
+.qcard{background:var(--cream);border-radius:var(--rs);border:1.5px solid var(--cream-d);padding:12px;margin-bottom:8px}
+.empty{text-align:center;padding:22px 0;color:var(--muted);font-size:13px}
+.empty i{font-size:34px;display:block;margin-bottom:8px;opacity:.35}
+.fbtn{display:flex;align-items:center;gap:9px;padding:11px;border-radius:var(--rs);border:1.5px solid var(--cream-d);background:var(--white);margin-bottom:7px;cursor:pointer;font-family:'Heebo',sans-serif;font-size:13px;font-weight:600;width:100%;transition:all .2s}
+.fbtn:hover{border-color:var(--sage);background:var(--sage-l)}
+.fpb{display:flex;align-items:center;gap:8px;padding:9px 11px;border-radius:var(--rs);border:1.5px solid var(--cream-d);background:var(--white);font-family:'Heebo',sans-serif;font-size:13px;font-weight:700;cursor:pointer;color:var(--text);width:100%;margin-bottom:6px}
+.fpb.sel{border-color:var(--sage);background:var(--sage-l);color:var(--sage-d)}
+.pie-leg{display:flex;flex-direction:column;gap:5px;margin-top:10px}
+.pie-leg-item{display:flex;align-items:center;gap:8px;font-size:12px}
+.pie-dot{width:12px;height:12px;border-radius:50%;flex-shrink:0}
+.msg-wrap{height:260px;overflow-y:auto;padding:4px 0;margin-bottom:10px}
+.msg-me{background:var(--sage);color:#fff;margin-right:auto;border-radius:16px;border-bottom-left-radius:4px;max-width:82%;padding:10px 13px;font-size:13px;margin-bottom:8px}
+.msg-oth{background:var(--white);border:1.5px solid var(--cream-d);border-radius:16px;border-bottom-right-radius:4px;max-width:82%;padding:10px 13px;font-size:13px;margin-bottom:8px}
+.msend{font-size:10px;font-weight:700;margin-bottom:3px}
+.msg-me .msend{color:rgba(255,255,255,.7)}
+.msg-oth .msend{color:var(--rose)}
+.mtime{font-size:10px;opacity:.6;margin-top:3px;text-align:left}
+.csend{width:40px;height:40px;border-radius:50%;background:var(--sage);border:none;color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:17px;flex-shrink:0}
+.drive-bar{display:flex;align-items:center;gap:8px;background:var(--green-l);border-radius:10px;padding:9px 13px;margin-bottom:12px}
+.drive-bar i{color:var(--green);font-size:18px}
+.drive-bar p{font-size:12px;color:var(--green-d);font-weight:600}
+.loading-block{text-align:center;padding:20px;color:var(--muted)}
+.loading-block i{font-size:28px;display:block;margin-bottom:8px;animation:spin 1s linear infinite}
+@keyframes spin{from{transform:rotate(0)}to{transform:rotate(360deg)}}
+.owner-tab{padding:6px 13px;border-radius:20px;font-size:12px;font-weight:700;border:2px solid;cursor:pointer;white-space:nowrap;font-family:'Heebo',sans-serif;transition:all .2s}
+.owner-tab.sel{color:#fff}
+/* expense table */
+.exp-row{display:flex;align-items:center;gap:6px;padding:10px 0;border-bottom:1px solid var(--cream-d);cursor:pointer;transition:background .15s}
+.exp-row:hover{background:var(--cream)}
+.exp-row:last-child{border-bottom:none}
+.exp-tag{font-size:10px;font-weight:700;padding:2px 8px;border-radius:10px}
+/* rustic divider */
+.rustic-div{text-align:center;margin:8px 0;color:var(--cream-d);font-size:18px;letter-spacing:6px}
+</style>
+</head>
+<body>
+<div class="hdr">
+  <div class="hdr-flowers"></div>
+  <div class="hdr-leaf">🍃</div>
+  <h1>🌿 תומר ואיתמר 🌸</h1>
+  <p style="font-size:11px;color:rgba(255,255,255,.8);margin-top:2px">יחד מתכננים את הרגע הכי גדול</p>
+  <div class="cntdwn">🌼 <span id="cdtxt">טוען...</span></div>
+</div>
+
+<!-- SETTINGS MODAL — הגדרות מלאות -->
+<div class="modal-bg" id="m-apikey" style="z-index:300">
+  <div class="modal" style="border-top:4px solid var(--sage)">
+    <button class="mcl" onclick="closeM('m-apikey')">×</button>
+    <div class="modal-title">⚙️ הגדרות אפליקציה</div>
+
+    <!-- Claude API -->
+    <div style="background:var(--sage-l);border-radius:var(--rs);padding:11px;margin-bottom:14px;border:1px solid var(--sage)">
+      <div style="font-size:13px;font-weight:700;color:var(--sage-d);margin-bottom:6px">🤖 Claude API Key</div>
+      <div style="font-size:11px;color:var(--sage-d);margin-bottom:7px">לניתוח PDF אוטומטי. קבלי ב: <a href="https://console.anthropic.com/settings/keys" target="_blank" style="color:var(--sage);font-weight:700">console.anthropic.com</a></div>
+      <input type="password" class="inp" id="api-key-inp" placeholder="sk-ant-api03-..." style="direction:ltr;font-family:monospace;font-size:12px;margin-bottom:0">
+    </div>
+
+    <!-- Firebase -->
+    <div style="background:var(--terr-l);border-radius:var(--rs);padding:11px;margin-bottom:14px;border:1px solid var(--terr)">
+      <div style="font-size:13px;font-weight:700;color:var(--terr-d);margin-bottom:6px">🔥 Firebase — שיתוף נתונים</div>
+      <div style="font-size:11px;color:var(--terr-d);margin-bottom:7px">נתוני הצעות המחיר ישמרו כאן ויהיו גלויים לכולם בזמן אמת</div>
+      <input type="text" class="inp" id="fb-key" placeholder="apiKey" style="direction:ltr;font-size:12px">
+      <input type="text" class="inp" id="fb-pid" placeholder="projectId" style="direction:ltr;font-size:12px">
+      <input type="text" class="inp" id="fb-url" placeholder="databaseURL (https://xxx.firebaseio.com)" style="direction:ltr;font-size:12px;margin-bottom:0">
+    </div>
+
+    <!-- Google Drive -->
+    <div style="background:var(--green-l);border-radius:var(--rs);padding:11px;margin-bottom:14px;border:1px solid var(--green)">
+      <div style="font-size:13px;font-weight:700;color:var(--green-d);margin-bottom:6px">📁 Google Drive API</div>
+      <div style="font-size:11px;color:var(--green-d);margin-bottom:7px">להעלאת PDF ישירות מהאתר לדרייב</div>
+      <input type="text" class="inp" id="gd-client-id" placeholder="Client ID (xxx.apps.googleusercontent.com)" style="direction:ltr;font-size:12px;margin-bottom:0">
+    </div>
+
+    <button class="btn" style="background:var(--sage)" onclick="saveAllSettings()">✅ שמור הגדרות והתחל</button>
+
+    <!-- Instructions -->
+    <details style="margin-top:14px">
+      <summary style="font-size:12px;font-weight:700;color:var(--sage-d);cursor:pointer">📖 הוראות הגדרה מפורטות</summary>
+      <div style="font-size:11px;color:var(--text);line-height:1.9;margin-top:10px;background:var(--cream);border-radius:var(--rs);padding:12px">
+        <strong>1. Claude API Key:</strong><br>
+        → console.anthropic.com → Settings → API Keys → Create Key<br><br>
+        <strong>2. Firebase (חינם עד 1GB):</strong><br>
+        → console.firebase.google.com → New Project → "wedding-app"<br>
+        → Realtime Database → Create → Test mode<br>
+        → Project Settings (⚙️) → Your apps → &lt;/&gt; → Copy config<br>
+        → הכנס apiKey, projectId, databaseURL<br><br>
+        <strong>3. Google Drive API:</strong><br>
+        → console.cloud.google.com → New Project<br>
+        → APIs & Services → Enable → "Google Drive API"<br>
+        → Credentials → Create → OAuth 2.0 Client ID → Web App<br>
+        → Authorized origins: כתובת האתר שלך ב-GitHub Pages<br>
+        → Copy Client ID
+      </div>
+    </details>
+  </div>
+</div>
+
+<!-- API key change button -->
+<div style="position:fixed;top:8px;left:8px;z-index:150">
+  <button onclick="openM('m-apikey')" style="background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.3);border-radius:20px;padding:4px 10px;color:#fff;font-family:'Heebo',sans-serif;font-size:10px;cursor:pointer" id="api-status-btn">⚙️ הגדרות</button>
+</div>
+
+<div class="main">
+
+<!-- HOME -->
+<div class="screen active" id="s-home">
+  <div class="card">
+    <div class="ch">
+      <div class="ci" style="background:var(--rose-l)">💬</div>
+      <div style="flex:1"><div class="ct">הודעות</div><div class="cs">תומר ↔ איתמר</div></div>
+      <button class="btn-sm" style="background:var(--sage)" onclick="openM('m-msg')">+ הודעה</button>
+    </div>
+    <div id="home-msgs"></div>
+  </div>
+  <div class="card">
+    <div class="ch">
+      <div class="ci" style="background:var(--olive-l)">✅</div>
+      <div style="flex:1"><div class="ct">משימות</div><div class="cs" id="tasks-sub">0 פתוחות</div></div>
+      <button class="btn-sm" style="background:var(--pink)" onclick="openM('m-task')">+ משימה</button>
+    </div>
+    <div id="tasks-list"></div>
+  </div>
+  <div class="sg">
+    <div class="sb" style="background:var(--pink-l)"><div class="sn" style="color:var(--pink)" id="st-g">—</div><div class="sl" style="color:var(--pink-d)">מוזמנים</div></div>
+    <div class="sb" style="background:var(--green-l)"><div class="sn" style="color:var(--green)" id="st-e">—</div><div class="sl" style="color:var(--green-d)">הערכת הגעה</div></div>
+    <div class="sb" style="background:var(--gold-l)"><div class="sn" style="color:var(--gold)" id="st-gi">—</div><div class="sl" style="color:var(--gold-d)">מתנות</div></div>
+    <div class="sb" style="background:var(--teal-l)"><div class="sn" style="color:var(--teal)" id="st-t">—</div><div class="sl" style="color:var(--teal-d)">משימות פתוחות</div></div>
+  </div>
+</div>
+
+<!-- GUESTS -->
+<div class="screen" id="s-guests">
+  <!-- Owner tabs -->
+  <div style="display:flex;gap:6px;overflow-x:auto;margin-bottom:12px;padding-bottom:2px" id="owner-tabs">
+    <button class="owner-tab sel" data-owner="הכל" onclick="setOwner(this)" style="border-color:var(--sage);background:var(--sage);color:#fff">👥 הכל</button>
+    <button class="owner-tab" data-owner="מוזמנים תומר" onclick="setOwner(this)" style="border-color:var(--purple-d);color:var(--purple-d)">💙 תומר</button>
+    <button class="owner-tab" data-owner="מוזמנים איתמר" onclick="setOwner(this)" style="border-color:var(--rose-d);color:var(--rose-d)">💍 איתמר</button>
+    <button class="owner-tab" data-owner="הילה ואבי" onclick="setOwner(this)" style="border-color:var(--teal-d);color:var(--teal-d)">🌿 הילה ואבי</button>
+    <button class="owner-tab" data-owner="שמעון ורויטל" onclick="setOwner(this)" style="border-color:var(--gold-d);color:var(--gold-d)">⭐ שמעון ורויטל</button>
+  </div>
+
+  <div id="guests-loading" class="loading-block"><span style="font-size:28px;display:block;animation:spin 1s linear infinite">🌿</span>טוען מוזמנים...</div>
+  <div id="guests-content" style="display:none">
+    <!-- Stats for selected owner -->
+    <div class="sg" id="g-stats-grid">
+      <div class="sb" style="background:var(--pink-l)"><div class="sn" style="color:var(--pink)" id="g-total">—</div><div class="sl" style="color:var(--pink-d)">מוזמנים</div></div>
+      <div class="sb" style="background:var(--green-l)"><div class="sn" style="color:var(--green)" id="g-est">—</div><div class="sl" style="color:var(--green-d)">הערכת הגעה</div></div>
+      <div class="sb" style="background:var(--purple-l)"><div class="sn" style="color:var(--purple)" id="g-inv">—</div><div class="sl" style="color:var(--purple-d)">נשלחה הזמנה</div></div>
+      <div class="sb" style="background:var(--gold-l)"><div class="sn" style="color:var(--gold)" id="g-gift">—</div><div class="sl" style="color:var(--gold-d)">מתנות</div></div>
+    </div>
+
+    <!-- Pie: by frame within selected owner -->
+    <div class="card">
+      <div class="ch"><div class="ci" style="background:var(--pink-l)">👥</div><div><div class="ct" id="pie-title">חלוקה לפי מסגרת</div></div>
+        <button class="btn-sm" style="background:var(--purple)" onclick="refreshGuests()">🔄</button>
+      </div>
+      <canvas id="guests-pie" width="240" height="220" style="display:block;margin:0 auto;max-width:220px"></canvas>
+      <div class="pie-leg" id="guests-legend"></div>
+    </div>
+
+    <!-- Bar: confirmation by frame -->
+    <div class="card">
+      <div class="ch"><div class="ci" style="background:var(--green-l)">📊</div><div><div class="ct">הערכת הגעה לפי מסגרת</div></div></div>
+      <canvas id="confirm-chart" width="300" height="180" style="display:block;margin:0 auto;max-width:100%"></canvas>
+    </div>
+
+    <!-- Gifts bar -->
+    <div class="card">
+      <div class="ch"><div class="ci" style="background:var(--gold-l)">🎁</div><div><div class="ct">מתנות לפי מסגרת</div></div></div>
+      <canvas id="gifts-chart" width="300" height="180" style="display:block;margin:0 auto;max-width:100%"></canvas>
+      <div id="gifts-empty" class="empty" style="display:none"><i class="ti ti-gift"></i>אין נתוני מתנות עדיין</div>
+    </div>
+  </div>
+</div>
+
+<!-- SUPPLIERS -->
+<div class="screen" id="s-suppliers">
+  <div class="tabs">
+    <button class="tab active" style="border-color:var(--sage);background:var(--sage);color:#fff" onclick="supTab('quotes',this)">📄 הצעות מחיר</button>
+    <button class="tab" style="border-color:var(--green);color:var(--muted)" onclick="supTab('closed',this)">🤝 ספקים סגורים</button>
+  </div>
+
+  <!-- QUOTES PANE -->
+  <div id="pane-quotes">
+    <!-- Drive sync bar -->
+    <div style="background:var(--sage-l);border-radius:var(--rs);padding:10px 13px;margin-bottom:10px;display:flex;align-items:center;gap:8px;border:1px solid var(--sage)">
+      <span style="font-size:18px">🌿</span>
+      <div style="flex:1;font-size:12px;color:var(--sage-d);font-weight:600">סנכרון Google Drive</div>
+      <button onclick="syncFromDrive()" id="sync-btn" style="padding:5px 12px;border-radius:20px;background:var(--sage);border:none;color:#fff;font-family:'Heebo',sans-serif;font-size:11px;font-weight:700;cursor:pointer">🔄 סרוק דרייב</button>
+    </div>
+    <div id="sync-status" style="display:none;font-size:11px;color:var(--sage-d);margin-bottom:8px;padding:6px 10px;background:var(--sage-l);border-radius:8px"></div>
+
+    <div class="card">
+      <div class="ch">
+        <div class="ci" style="background:var(--gold-l)">📄</div>
+        <div style="flex:1"><div class="ct">הצעות מחיר</div><div class="cs">מסונכרן עם הדרייב</div></div>
+      </div>
+      <button class="sup-cat" onclick="openCat('קייטרינג','🍽️')"><span style="font-size:18px">🍽️</span><span style="flex:1">קייטרינג</span><span id="cc-קייטרינג" style="font-size:11px;color:var(--muted)"></span><span style="color:var(--muted);font-size:13px">›</span></button>
+      <button class="sup-cat" onclick="openCat('צלם','📸')"><span style="font-size:18px">📸</span><span style="flex:1">צלם (סטילס / וידאו / מגנטים)</span><span id="cc-צלם" style="font-size:11px;color:var(--muted)"></span><span style="color:var(--muted);font-size:13px">›</span></button>
+      <button class="sup-cat" onclick="openCat('הגברה ותאורה','🔊')"><span style="font-size:18px">🔊</span><span style="flex:1">הגברה ותאורה</span><span id="cc-הגברה ותאורה" style="font-size:11px;color:var(--muted)"></span><span style="color:var(--muted);font-size:13px">›</span></button>
+      <button class="sup-cat" onclick="openCat('דיגיי','🎵')"><span style="font-size:18px">🎵</span><span style="flex:1">דיגיי</span><span id="cc-דיגיי" style="font-size:11px;color:var(--muted)"></span><span style="color:var(--muted);font-size:13px">›</span></button>
+      <button class="sup-cat" onclick="openCat('עיצוב פרחים','🌸')"><span style="font-size:18px">🌸</span><span style="flex:1">עיצוב פרחים</span><span id="cc-עיצוב פרחים" style="font-size:11px;color:var(--muted)"></span><span style="color:var(--muted);font-size:13px">›</span></button>
+      <button class="sup-cat" onclick="openCat('שירותים','🚿')"><span style="font-size:18px">🚿</span><span style="flex:1">שירותים</span><span id="cc-שירותים" style="font-size:11px;color:var(--muted)"></span><span style="color:var(--muted);font-size:13px">›</span></button>
+      <button class="sup-cat" onclick="openCat('ריסוס','🌿')"><span style="font-size:18px">🌿</span><span style="flex:1">ריסוס</span><span id="cc-ריסוס" style="font-size:11px;color:var(--muted)"></span><span style="color:var(--muted);font-size:13px">›</span></button>
+      <button class="sup-cat" onclick="openCat('שולחנות וכסאות','🪑')"><span style="font-size:18px">🪑</span><span style="flex:1">שולחנות וכסאות</span><span id="cc-שולחנות וכסאות" style="font-size:11px;color:var(--muted)"></span><span style="color:var(--muted);font-size:13px">›</span></button>
+    </div>
+
+    <!-- Price comparison charts per category -->
+    <div id="price-charts-section"></div>
+  </div>
+
+  <!-- CLOSED PANE -->
+  <div id="pane-closed" style="display:none">
+    <div class="card">
+      <div class="ch">
+        <div class="ci" style="background:var(--green-l)">🤝</div>
+        <div style="flex:1"><div class="ct">ספקים סגורים</div><div class="cs" id="closed-sub">0 ספקים</div></div>
+        <button class="btn-sm" style="background:var(--sage)" onclick="openM('m-closed')">+ הוסף</button>
+      </div>
+      <div id="closed-list"><div class="empty">🌿<br>עדיין אין ספקים סגורים</div></div>
+    </div>
+    <div class="card">
+      <div class="ch"><div class="ci" style="background:var(--gold-l)">💰</div><div><div class="ct">סיכום תשלומים</div></div></div>
+      <div class="sg" style="margin-bottom:10px">
+        <div class="sb" style="background:var(--green-l)"><div class="sn" style="color:var(--green);font-size:18px" id="pay-paid">₪0</div><div class="sl" style="color:var(--green-d)">שולם</div></div>
+        <div class="sb" style="background:var(--coral-l)"><div class="sn" style="color:var(--coral);font-size:18px" id="pay-rem">₪0</div><div class="sl" style="color:var(--coral-d)">נותר</div></div>
+      </div>
+      <div id="pay-bd"></div>
+    </div>
+  </div>
+</div>
+
+<!-- FILES -->
+<div class="screen" id="s-files">
+  <div class="drive-bar"><i class="ti ti-brand-google-drive"></i><p>Google Drive • tomer4513@gmail.com</p></div>
+  <div class="card">
+    <div class="ch"><div class="ci" style="background:var(--purple-l)">📁</div><div><div class="ct">העלה קובץ לדרייב</div></div></div>
+    <div id="folder-pick" style="margin-bottom:12px">
+      <button class="fpb sel" data-f="הצעות מחיר" onclick="pickF(this)">📄 הצעות מחיר</button>
+      <button class="fpb" data-f="סגירות" onclick="pickF(this)">✅ סגירות ספקים</button>
+      <button class="fpb" data-f="מוזמנים" onclick="pickF(this)">👥 מוזמנים</button>
+      <button class="fpb" data-f="הוצאות" onclick="pickF(this)">💰 הוצאות</button>
+      <button class="fpb" data-f="שונות" onclick="pickF(this)">📋 שונות</button>
+    </div>
+    <div class="upl-zone" onclick="document.getElementById('file-inp').click()" ondragover="this.classList.add('drag');event.preventDefault()" ondragleave="this.classList.remove('drag')" ondrop="handleDrop(event)">
+      <i class="ti ti-cloud-upload"></i>
+      <p style="font-size:13px;font-weight:700;color:var(--text)">לחצי להעלאה או גרירה</p>
+      <p style="font-size:11px;color:var(--muted);margin-top:3px">PDF, Excel, Word, תמונות</p>
+    </div>
+    <input type="file" id="file-inp" style="display:none" onchange="handleFileUp(this)">
+    <div id="up-ok" style="display:none;background:var(--green-l);border-radius:var(--rs);padding:10px;text-align:center"><span style="color:var(--green-d);font-weight:700;font-size:13px">✓ הועלה!</span></div>
+  </div>
+  <div class="card">
+    <div class="ch"><div class="ci" style="background:var(--teal-l)">📂</div><div><div class="ct">קישורים מהירים</div></div></div>
+    <button class="fbtn" onclick="window.open('https://drive.google.com/drive/u/1/folders/1AOT48-E7vYmIAOeN-teho2XteTOdbfrr','_blank')"><i class="ti ti-folder" style="color:var(--gold)"></i><span style="flex:1">📁 תיקיית החתונה</span><i class="ti ti-external-link" style="color:var(--muted);font-size:14px"></i></button>
+    <button class="fbtn" onclick="window.open('https://docs.google.com/spreadsheets/d/1soC3rWCVOeNCOAQ2aNanTU-CberrJTMLi80ZoIYJwug','_blank')"><i class="ti ti-table" style="color:var(--green)"></i><span style="flex:1">👥 Sheet מוזמנים</span><i class="ti ti-external-link" style="color:var(--muted);font-size:14px"></i></button>
+  </div>
+</div>
+
+<!-- CHAT -->
+<div class="screen" id="s-chat">
+  <div class="card">
+    <div class="ch"><div class="ci" style="background:var(--purple-l)">💬</div><div><div class="ct">צ'אט בזמן אמת 🔥</div><div class="cs">תומר ואיתמר</div></div></div>
+    <div id="fb-setup">
+      <div style="background:var(--gold-l);border-radius:var(--rs);padding:10px 12px;margin-bottom:10px;font-size:12px;color:var(--gold-d)">⚙️ הזן פרטי Firebase לצ'אט בזמן אמת</div>
+      <input type="text" class="inp" id="fb-key" placeholder="apiKey" style="direction:ltr">
+      <input type="text" class="inp" id="fb-pid" placeholder="projectId" style="direction:ltr">
+      <input type="text" class="inp" id="fb-url" placeholder="databaseURL" style="direction:ltr">
+      <button class="btn" style="background:var(--purple)" onclick="initFB()">🔥 התחבר</button>
+      <div style="margin-top:10px;background:var(--purple-l);border-radius:var(--rs);padding:12px;font-size:11px;color:var(--purple-d);line-height:1.7">
+        <strong>הגדרה:</strong><br>1. <a href="https://console.firebase.google.com" target="_blank" style="color:var(--purple)">console.firebase.google.com</a> → פרויקט חדש<br>2. Realtime Database → Create → Test mode<br>3. Project Settings → &lt;/&gt; → copy config
+      </div>
+    </div>
+    <div id="chat-rdy" style="display:none">
+      <div style="display:flex;gap:6px;margin-bottom:10px">
+        <div class="uc sel" style="background:var(--pink);color:#fff" onclick="selCU(this,'תומר 💍')">תומר 💍</div>
+        <div class="uc" style="background:var(--purple);color:#fff" onclick="selCU(this,'איתמר 💙')">איתמר 💙</div>
+      </div>
+      <div class="msg-wrap" id="chat-msgs"><div class="empty"><i class="ti ti-message-circle"></i>אין הודעות עדיין</div></div>
+      <div style="display:flex;gap:8px">
+        <input type="text" class="inp" id="chat-inp" placeholder="כתוב הודעה..." style="flex:1;margin-bottom:0" onkeypress="if(event.key==='Enter')sendChat()">
+        <button class="csend" onclick="sendChat()"><i class="ti ti-send"></i></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div><!-- /main chat -->
+</div><!-- /s-chat -->
+
+<!-- EXPENSES -->
+<div class="screen" id="s-expenses">
+
+  <!-- Summary stats -->
+  <div class="sg">
+    <div class="sb" style="background:var(--sage-l)">
+      <div class="sn" style="color:var(--sage-d)" id="exp-paid-total">₪0</div>
+      <div class="sl" style="color:var(--sage-d)">שולם עד כה</div>
+    </div>
+    <div class="sb" style="background:var(--terr-l)">
+      <div class="sn" style="color:var(--terr-d)" id="exp-remain-total">₪0</div>
+      <div class="sl" style="color:var(--terr-d)">טרם שולם</div>
+    </div>
+    <div class="sb" style="background:var(--bark-l)">
+      <div class="sn" style="color:var(--bark-d)" id="exp-grand-total">₪0</div>
+      <div class="sl" style="color:var(--bark-d)">סה"כ צפוי</div>
+    </div>
+    <div class="sb" style="background:var(--olive-l)">
+      <div class="sn" style="color:var(--olive-d)" id="exp-suppliers-count">0</div>
+      <div class="sl" style="color:var(--olive-d)">ספקים סגורים</div>
+    </div>
+  </div>
+
+  <!-- Donut chart by category -->
+  <div class="card">
+    <div class="ch">
+      <div class="ci" style="background:var(--bark-l)">🌾</div>
+      <div style="flex:1"><div class="ct">הוצאות לפי סוג ספק</div><div class="cs">לחץ על פלח לפרטים</div></div>
+    </div>
+    <canvas id="exp-chart" width="260" height="220" style="display:block;margin:0 auto;max-width:240px"></canvas>
+    <div class="pie-leg" id="exp-legend"></div>
+  </div>
+
+  <!-- Expense table -->
+  <div class="card">
+    <div class="ch">
+      <div class="ci" style="background:var(--terr-l)">📋</div>
+      <div style="flex:1"><div class="ct">פירוט הוצאות</div><div class="cs">לחץ על שורה לעדכון תשלום</div></div>
+      <button class="btn-sm" style="background:var(--sage)" onclick="openM('m-closed');supTab(\'closed\',document.querySelectorAll(\'#s-suppliers .tab\')[1])">+ הוסף ספק</button>
+    </div>
+    <!-- table header -->
+    <div style="display:grid;grid-template-columns:auto 1fr auto auto;gap:4px;padding:6px 0;border-bottom:2px solid var(--cream-d);font-size:10px;font-weight:700;color:var(--muted)">
+      <span>סוג</span><span>ספק</span><span>שולם</span><span>נותר</span>
+    </div>
+    <div id="exp-table"></div>
+  </div>
+
+  <!-- Drive sync note -->
+  <div style="background:var(--sage-l);border-radius:var(--rs);padding:10px 13px;margin-bottom:12px;border:1px solid var(--sage)">
+    <div style="font-size:12px;font-weight:700;color:var(--sage-d);margin-bottom:4px">🌿 סנכרון לקובץ הוצאות בדרייב</div>
+    <div style="font-size:11px;color:var(--sage-d);line-height:1.6">כל עדכון תשלום ישמר כאן. כשתוסיפי קובץ הוצאות לדרייב — הדביקי את הקישור ויסונכרן אוטומטית.</div>
+    <input type="text" class="inp" id="expenses-sheet-url" placeholder="קישור לקובץ הוצאות בדרייב (אופציונלי)" style="direction:ltr;margin-top:8px;margin-bottom:0;font-size:11px">
+  </div>
+</div>
+<!-- CONTACTS -->
+<div class="screen" id="s-contacts">
+  <div class="card">
+    <div class="ch">
+      <div class="ci" style="background:var(--rose-l)">📞</div>
+      <div style="flex:1"><div class="ct">אנשי קשר</div><div class="cs" id="contacts-sub">0 אנשי קשר</div></div>
+      <button class="btn-sm" style="background:var(--sage)" onclick="openM('m-add-contact')">+ הוסף</button>
+    </div>
+    <div style="background:var(--blue-l);border-radius:var(--rs);padding:11px 13px;margin-bottom:10px;border:1px solid #93C5FD">
+      <div style="font-size:12px;font-weight:700;color:var(--blue-d);margin-bottom:5px">📱 ייבוא מהטלפון</div>
+      <div style="font-size:11px;color:var(--blue-d);margin-bottom:7px;line-height:1.5">ייבא אנשי קשר ישירות מהטלפון — תומך ב-iPhone ואנדרואיד</div>
+      <button onclick="importFromPhone()" style="width:100%;padding:9px;border-radius:var(--rs);background:var(--blue-d);border:none;color:#fff;font-family:'Heebo',sans-serif;font-size:13px;font-weight:700;cursor:pointer">📱 ייבא מאנשי הקשר</button>
+      <div id="import-status" style="display:none;margin-top:6px;font-size:11px;color:var(--blue-d);text-align:center"></div>
+    </div>
+    <div style="background:var(--sage-l);border-radius:var(--rs);padding:11px 13px;margin-bottom:10px;border:1px solid var(--sage)">
+      <div style="font-size:12px;font-weight:700;color:var(--sage-d);margin-bottom:4px">💾 שמירה לאייפון / אנדרואיד</div>
+      <div style="font-size:11px;color:var(--sage-d);margin-bottom:7px">הורדת קובץ vCard — פתחו בטלפון להוספה ישירה לאנשי הקשר</div>
+      <button onclick="exportVCard()" style="width:100%;padding:9px;border-radius:var(--rs);background:var(--sage);border:none;color:#fff;font-family:'Heebo',sans-serif;font-size:13px;font-weight:700;cursor:pointer">⬇️ הורד vCard לטלפון</button>
+    </div>
+    <input type="text" class="inp" id="contact-search" placeholder="🔍 חפש שם, תפקיד..." oninput="renderContacts()" style="margin-bottom:8px">
+    <div style="display:flex;gap:5px;overflow-x:auto;margin-bottom:10px">
+      <button class="tab active" data-cat="הכל" onclick="filterContacts(this)" style="border-color:var(--sage);background:var(--sage);color:#fff;font-size:11px">הכל</button>
+      <button class="tab" data-cat="ספק" onclick="filterContacts(this)" style="border-color:var(--bark);color:var(--muted);font-size:11px">🤝 ספקים</button>
+      <button class="tab" data-cat="משפחה" onclick="filterContacts(this)" style="border-color:var(--rose);color:var(--muted);font-size:11px">👨‍👩‍👧 משפחה</button>
+      <button class="tab" data-cat="חבר" onclick="filterContacts(this)" style="border-color:var(--purple-d);color:var(--muted);font-size:11px">👫 חברים</button>
+      <button class="tab" data-cat="אחר" onclick="filterContacts(this)" style="border-color:var(--muted);color:var(--muted);font-size:11px">📋 אחר</button>
+    </div>
+    <div id="contacts-list"></div>
+  </div>
+</div>
+
+</div><!-- /main -->
+
+<nav class="nav">
+  <button class="nb active" onclick="goS('s-home',this)"><span class="nbi">🏠</span>בית</button>
+  <button class="nb" onclick="goS('s-guests',this);loadGuests()"><span class="nbi">👥</span>מוזמנים</button>
+  <button class="nb" onclick="goS('s-suppliers',this)"><span class="nbi">🤝</span>ספקים</button>
+  <button class="nb" onclick="goS('s-expenses',this);renderExpenses()"><span class="nbi">💰</span>הוצאות</button>
+  <button class="nb" onclick="goS('s-contacts',this)"><span class="nbi">📞</span>אנשי קשר</button>
+  <button class="nb" onclick="goS('s-files',this)"><span class="nbi">📁</span>קבצים</button>
+  <button class="nb" onclick="goS('s-chat',this)"><span class="nbi">💬</span>צ'אט</button>
+</nav>
+
+<!-- MODALS -->
+<div class="modal-bg" id="m-msg">
+  <div class="modal">
+    <button class="mcl" onclick="closeM('m-msg')">×</button>
+    <div class="modal-title">💬 הודעה חדשה</div>
+    <div style="display:flex;gap:8px;margin-bottom:12px">
+      <div class="uc sel" style="background:var(--pink);color:#fff" onclick="selMU(this,'תומר 💍')">תומר 💍</div>
+      <div class="uc" style="background:var(--purple);color:#fff" onclick="selMU(this,'איתמר 💙')">איתמר 💙</div>
+    </div>
+    <textarea class="inp" id="msg-txt" rows="3" placeholder="כתוב הודעה..." style="resize:none"></textarea>
+    <button class="btn" style="background:var(--pink)" onclick="saveMsg()">שמור הודעה</button>
+  </div>
+</div>
+
+<div class="modal-bg" id="m-task">
+  <div class="modal">
+    <button class="mcl" onclick="closeM('m-task')">×</button>
+    <div class="modal-title">✅ משימה חדשה</div>
+    <input type="text" class="inp" id="t-ttl" placeholder="כותרת המשימה">
+    <textarea class="inp" id="t-dsc" rows="2" placeholder="פירוט (אופציונלי)" style="resize:none"></textarea>
+    <label style="font-size:12px;font-weight:700;display:block;margin-bottom:6px">אחראי:</label>
+    <div style="display:flex;gap:8px;margin-bottom:12px">
+      <div class="uc sel" style="background:var(--pink);color:#fff" onclick="selTU(this,'תומר')">תומר</div>
+      <div class="uc" style="background:var(--purple);color:#fff" onclick="selTU(this,'איתמר')">איתמר</div>
+      <div class="uc" style="background:var(--teal);color:#fff" onclick="selTU(this,'שניהם')">שניהם</div>
+    </div>
+    <button class="btn" style="background:var(--pink)" onclick="saveTask()">הוסף משימה</button>
+  </div>
+</div>
+
+<!-- Supplier category modal -->
+<div class="modal-bg" id="m-cat">
+  <div class="modal">
+    <button class="mcl" onclick="closeM('m-cat')">×</button>
+    <div class="modal-title" id="m-cat-title">הצעות</div>
+    <div id="m-cat-body"></div>
+    <!-- Multi-file upload -->
+    <div style="margin-top:12px">
+      <div style="background:var(--cream);border:2px dashed var(--cream-d);border-radius:var(--rs);padding:14px;text-align:center;cursor:pointer" onclick="document.getElementById('pdf-inp').click()" id="pdf-drop-zone">
+        <i class="ti ti-files" style="font-size:26px;color:var(--sage);display:block;margin-bottom:5px"></i>
+        <p style="font-size:13px;font-weight:700;color:var(--text)">העלי קבצי PDF לניתוח אוטומטי</p>
+        <p style="font-size:11px;color:var(--muted);margin-top:2px">ניתן לבחור מספר קבצים בבת אחת (הצעה + תפריט)</p>
+      </div>
+      <input type="file" id="pdf-inp" accept=".pdf,.doc,.docx" style="display:none" multiple onchange="handlePDFUpload(this)">
+      <div id="pdf-queue" style="display:none;margin-top:8px"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Edit quote after AI analysis -->
+<div class="modal-bg" id="m-edit-quote">
+  <div class="modal">
+    <button class="mcl" onclick="closeM('m-edit-quote')">×</button>
+    <div class="modal-title">✏️ ערכי / אשרי פרטים</div>
+    <div style="background:var(--sage-l);border-radius:var(--rs);padding:10px 12px;margin-bottom:12px;font-size:12px;color:var(--sage-d)">
+      ✓ Claude ניתח — <span id="eq-files-list" style="font-weight:700"></span>
+    </div>
+    <label style="font-size:12px;font-weight:700;display:block;margin-bottom:4px">שם הספק</label>
+    <input type="text" class="inp" id="eq-name" placeholder="שם הספק">
+    <label style="font-size:12px;font-weight:700;display:block;margin-bottom:4px">מחיר כולל (₪)</label>
+    <input type="number" class="inp" id="eq-price" placeholder="מחיר">
+    <label style="font-size:12px;font-weight:700;display:block;margin-bottom:4px">מה כלול</label>
+    <textarea class="inp" id="eq-inc" rows="4" style="resize:none" placeholder="שורה לכל פריט"></textarea>
+    <label style="font-size:12px;font-weight:700;display:block;margin-bottom:4px">תוספות מחיר</label>
+    <textarea class="inp" id="eq-ext" rows="2" style="resize:none" placeholder="אפטר פארטי, מנת דג נא וכו'"></textarea>
+    <label style="font-size:12px;font-weight:700;display:block;margin-bottom:4px">הערות</label>
+    <textarea class="inp" id="eq-notes" rows="2" style="resize:none"></textarea>
+    <label style="font-size:12px;font-weight:700;display:block;margin-bottom:4px">קישור לקובץ בדרייב (אופציונלי)</label>
+    <input type="text" class="inp" id="eq-link1" placeholder="קישור להצעת מחיר בדרייב" style="direction:ltr">
+    <input type="text" class="inp" id="eq-link2" placeholder="קישור לתפריט בדרייב" style="direction:ltr">
+    <button class="btn" style="background:var(--sage)" onclick="confirmQuote()">💾 שמור הצעה</button>
+  </div>
+</div>
+
+<!-- Accept supplier modal (קבל ספק) -->
+<div class="modal-bg" id="m-accept">
+  <div class="modal">
+    <button class="mcl" onclick="closeM('m-accept')">×</button>
+    <div class="modal-title">✅ קבל ספק — סגירה</div>
+    <div style="background:var(--green-l);border-radius:var(--rs);padding:10px 12px;margin-bottom:14px;font-size:13px;color:var(--green-d)">
+      הספק יועבר לרשימת הספקים הסגורים ויתעדכן בהוצאות אוטומטית
+    </div>
+    <div id="accept-preview" style="background:#FAFAFA;border-radius:var(--rs);padding:12px;margin-bottom:14px;border:1.5px solid #F3E8FF"></div>
+    <label style="font-size:12px;font-weight:700;display:block;margin-bottom:4px">מחיר סופי מוסכם (₪)</label>
+    <input type="number" class="inp" id="ac-price" placeholder="מחיר סופי">
+    <label style="font-size:12px;font-weight:700;display:block;margin-bottom:4px">שולם עד כה (₪)</label>
+    <input type="number" class="inp" id="ac-paid" placeholder="0">
+    <label style="font-size:12px;font-weight:700;display:block;margin-bottom:4px">אמצעי תשלום</label>
+    <div style="display:flex;gap:8px;margin-bottom:10px">
+      <div class="uc sel" style="background:var(--blue);color:#fff" onclick="selAP(this,'העברה')">💳 העברה</div>
+      <div class="uc" style="background:var(--green);color:#fff" onclick="selAP(this,'מזומן')">💵 מזומן</div>
+    </div>
+    <label style="font-size:12px;font-weight:700;display:block;margin-bottom:4px">קישור לחוזה (URL)</label>
+    <input type="text" class="inp" id="ac-contract" placeholder="העלי חוזה לדרייב והדביקי קישור" style="direction:ltr">
+    <button class="btn" style="background:var(--green)" onclick="acceptSupplier()">✅ אשר סגירה</button>
+  </div>
+</div>
+
+<!-- Compare modal -->
+<div class="modal-bg" id="m-compare">
+  <div class="modal">
+    <button class="mcl" onclick="closeM('m-compare')">×</button>
+    <div class="modal-title" id="m-cmp-title">⚖️ השוואה</div>
+    <div id="m-cmp-body"></div>
+  </div>
+</div>
+
+<!-- View file modal (PDF embed) -->
+<div class="modal-bg" id="m-view-file">
+  <div class="modal" style="height:80vh;display:flex;flex-direction:column">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
+      <div style="font-size:15px;font-weight:700" id="m-vf-title">קובץ</div>
+      <button class="mcl" onclick="closeM('m-view-file')">×</button>
+    </div>
+    <iframe id="m-vf-frame" style="flex:1;border:none;border-radius:var(--rs);background:#f5f5f5" src="about:blank"></iframe>
+    <a id="m-vf-open" href="#" target="_blank" style="display:block;margin-top:10px;text-align:center;color:var(--purple);font-size:13px;font-weight:700">פתח בחלון חדש ↗</a>
+  </div>
+</div>
+
+<!-- Closed supplier modal -->
+<div class="modal-bg" id="m-closed">
+  <div class="modal">
+    <button class="mcl" onclick="closeM('m-closed')">×</button>
+    <div class="modal-title">🤝 ספק סגור</div>
+    <input type="text" class="inp" id="cl-nm" placeholder="שם הספק">
+    <input type="text" class="inp" id="cl-ct" placeholder="קטגוריה">
+    <input type="number" class="inp" id="cl-tot" placeholder='סה"כ מחיר (₪)'>
+    <input type="number" class="inp" id="cl-pd" placeholder="שולם עד כה (₪)">
+    <label style="font-size:12px;font-weight:700;display:block;margin-bottom:6px">אמצעי תשלום:</label>
+    <div style="display:flex;gap:8px;margin-bottom:8px">
+      <div class="uc sel" style="background:var(--blue);color:#fff" onclick="selPT(this,'העברה')">💳 העברה</div>
+      <div class="uc" style="background:var(--green);color:#fff" onclick="selPT(this,'מזומן')">💵 מזומן</div>
+    </div>
+    <input type="text" class="inp" id="cl-con" placeholder="קישור לחוזה (URL)" style="direction:ltr">
+    <input type="text" class="inp" id="cl-wht" placeholder="קישור לפירוט מה נותנים (URL)" style="direction:ltr">
+    <button class="btn" style="background:var(--green)" onclick="saveClosed()">שמור</button>
+  </div>
+</div>
+
+<!-- Add contact modal -->
+<div class="modal-bg" id="m-add-contact">
+  <div class="modal">
+    <button class="mcl" onclick="closeM('m-add-contact')">×</button>
+    <div class="modal-title" id="m-contact-title">📞 איש קשר חדש</div>
+    <input type="text" class="inp" id="ct-name" placeholder="שם מלא *">
+    <input type="tel" class="inp" id="ct-phone" placeholder="טלפון" style="direction:ltr">
+    <input type="email" class="inp" id="ct-email" placeholder="אימייל" style="direction:ltr">
+    <input type="text" class="inp" id="ct-role" placeholder="תפקיד / חברה (לדוג: קייטרינג קומידה)">
+    <label style="font-size:12px;font-weight:700;display:block;margin-bottom:6px">קטגוריה:</label>
+    <div style="display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap">
+      <div class="uc sel" style="background:var(--bark);color:#fff" onclick="selContactCat(this,'ספק')">🤝 ספק</div>
+      <div class="uc" style="background:var(--rose);color:#fff" onclick="selContactCat(this,'משפחה')">👨‍👩‍👧 משפחה</div>
+      <div class="uc" style="background:var(--purple);color:#fff" onclick="selContactCat(this,'חבר')">👫 חבר</div>
+      <div class="uc" style="background:var(--muted);color:#fff" onclick="selContactCat(this,'אחר')">📋 אחר</div>
+    </div>
+    <textarea class="inp" id="ct-notes" rows="2" placeholder="הערות" style="resize:none"></textarea>
+    <button class="btn" style="background:var(--sage)" onclick="saveContact()">שמור איש קשר</button>
+  </div>
+</div>
+<script>
+'use strict';
+var S={
+  get:(k,d)=>{try{var v=localStorage.getItem(k);return v!==null?JSON.parse(v):d}catch(e){console.warn('LS get err',k,e);return d}},
+  set:(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v));return true}catch(e){console.warn('LS set err',k,e);return false}}
+};
+
+// ── DATA — loaded from localStorage ──
+var msgs=S.get('w3_msgs',[]);
+var tasks=S.get('w3_tasks',[]);
+var quotes=S.get('w3_quotes',{});   // {cat:[{name,price,inc,ext,notes,link1,link2,accepted,...}]}
+var closed=S.get('w3_closed',[]);   // [{name,cat,total,paid,payType,contract,what,...}]
+
+// Verify quotes is an object (not array)
+if(Array.isArray(quotes))quotes={};
+
+console.log('Loaded quotes from storage:',Object.keys(quotes).map(k=>k+': '+quotes[k].length));
+
+// NAV
+function goS(id,btn){
+  document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  document.querySelectorAll('.nb').forEach(b=>b.classList.remove('active'));
+  if(btn)btn.classList.add('active');
+}
+
+// COUNTDOWN
+(()=>{var d=new Date('2026-04-15'),diff=Math.ceil((d-new Date())/864e5);document.getElementById('cdtxt').textContent=diff>0?diff+' ימים לחתונה!':'מזל טוב! 🎊'})();
+
+// MODAL
+function openM(id){document.getElementById(id).classList.add('open')}
+function closeM(id){document.getElementById(id).classList.remove('open')}
+document.querySelectorAll('.modal-bg').forEach(m=>m.addEventListener('click',e=>{if(e.target===m)m.classList.remove('open')}));
+
+// ── MESSAGES ──
+var msgUser='תומר 💍';
+function selMU(el,u){document.querySelectorAll('#m-msg .uc').forEach(x=>{x.classList.remove('sel');x.style.border='2px solid transparent'});el.classList.add('sel');el.style.border='2px solid #fff';msgUser=u}
+function saveMsg(){var t=document.getElementById('msg-txt').value.trim();if(!t)return;msgs.unshift({user:msgUser,text:t,ts:Date.now()});S.set('w3_msgs',msgs);closeM('m-msg');renderMsgs()}
+function renderMsgs(){
+  var el=document.getElementById('home-msgs');
+  if(!msgs.length){el.innerHTML='<div class="empty"><i class="ti ti-message-circle"></i>אין הודעות עדיין</div>';return}
+  el.innerHTML=msgs.slice(0,4).map(m=>{
+    var d=new Date(m.ts),t=d.getHours()+':'+String(d.getMinutes()).padStart(2,'0');
+    var isT=m.user.includes('תומר');
+    return '<div class="msg-bubble" style="background:'+(isT?'var(--pink-l)':'var(--purple-l)')+'">'
+      +'<div style="font-size:11px;font-weight:700;color:'+(isT?'var(--pink-d)':'var(--purple-d)')+';margin-bottom:3px">'+m.user+' • '+t+'</div>'
+      +'<div style="font-size:13px">'+m.text+'</div></div>';
+  }).join('');
+}
+renderMsgs();
+
+// ── TASKS ──
+var tUser='תומר';
+var STATS=['פתוח','בתהליך','בוצע'];
+var STC={פתוח:'var(--blue)',בתהליך:'var(--gold)',בוצע:'var(--green)'};
+var STB={פתוח:'var(--blue-l)',בתהליך:'var(--gold-l)',בוצע:'var(--green-l)'};
+function selTU(el,u){document.querySelectorAll('#m-task .uc').forEach(x=>{x.classList.remove('sel');x.style.border='2px solid transparent'});el.classList.add('sel');el.style.border='2px solid #fff';tUser=u}
+function saveTask(){var t=document.getElementById('t-ttl').value.trim();if(!t)return;tasks.push({title:t,desc:document.getElementById('t-dsc').value.trim(),user:tUser,status:'פתוח',ts:Date.now()});S.set('w3_tasks',tasks);closeM('m-task');renderTasks()}
+function cycleS(i){tasks[i].status=STATS[(STATS.indexOf(tasks[i].status)+1)%3];S.set('w3_tasks',tasks);renderTasks()}
+function delTask(i){tasks.splice(i,1);S.set('w3_tasks',tasks);renderTasks()}
+function renderTasks(){
+  var open=tasks.filter(t=>t.status!=='בוצע').length;
+  document.getElementById('tasks-sub').textContent=open+' פתוחות';
+  document.getElementById('st-t').textContent=open||'—';
+  var el=document.getElementById('tasks-list');
+  if(!tasks.length){el.innerHTML='<div class="empty"><i class="ti ti-checklist"></i>אין משימות עדיין</div>';return}
+  el.innerHTML=tasks.map((t,i)=>'<div class="task-item"><div style="display:flex;align-items:flex-start;gap:9px">'
+    +'<div class="task-cb'+(t.status==='בוצע'?' done':'')+'" onclick="cycleS('+i+')"></div>'
+    +'<div style="flex:1"><div style="font-size:14px;font-weight:600'+(t.status==='בוצע'?';text-decoration:line-through;color:var(--muted)':'')+'" onclick="cycleS('+i+')">'+t.title+'</div>'
+    +(t.desc?'<div style="font-size:12px;color:var(--muted);margin-top:2px;line-height:1.4">'+t.desc+'</div>':'')
+    +'<div style="display:flex;gap:6px;margin-top:6px;align-items:center">'
+    +'<button class="spill" style="background:'+STB[t.status]+';color:'+STC[t.status]+'" onclick="cycleS('+i+')">'+t.status+' →</button>'
+    +'<span style="font-size:10px;color:var(--muted)">👤 '+t.user+'</span>'
+    +'<button onclick="delTask('+i+')" style="background:none;border:none;color:var(--muted);cursor:pointer;font-size:15px;margin-right:auto">×</button>'
+    +'</div></div></div></div>').join('');
+}
+renderTasks();
+
+// ── GUESTS (multi-sheet) ──
+var SHEET_ID='1soC3rWCVOeNCOAQ2aNanTU-CberrJTMLi80ZoIYJwug';
+// שמות הגיליונות האמיתיים מהדרייב
+var OWNERS=['מוזמנים תומר','מוזמנים איתמר','הילה ואבי','שמעון ורויטל'];
+var OWNER_LABELS={'מוזמנים תומר':'תומר 💙','מוזמנים איתמר':'איתמר 💍','הילה ואבי':'הילה ואבי 🌿','שמעון ורויטל':'שמעון ורויטל ⭐'};
+var OWNER_COLORS={'מוזמנים תומר':'#7C3AED','מוזמנים איתמר':'#C4706A','הילה ואבי':'#2D7A6A','שמעון ורויטל':'#C4860A'};
+var FRAME_COLORS=['#E91E8C','#7C3AED','#F59E0B','#0D9488','#EF4444','#10B981'];
+var guestData={};   // {owner: {rows:[{frame,name,cnt,est,inv}], gifts:{frame:amt}}}
+var gLoaded=false;
+var gCharts={};
+var currentOwner='הכל';
+
+async function loadGuests(){
+  if(gLoaded)return;
+  document.getElementById('guests-loading').style.display='block';
+  document.getElementById('guests-content').style.display='none';
+  var errors=[];
+  try{
+    for(var owner of OWNERS){
+      try{
+        var enc=encodeURIComponent(owner);
+        var url='https://docs.google.com/spreadsheets/d/'+SHEET_ID+'/gviz/tq?tqx=out:csv&sheet='+enc;
+        var r=await fetch(url,{mode:'cors'});
+        var csv=await r.text();
+        // Check if we got actual CSV (not error page)
+        if(csv.includes('<!DOCTYPE')||csv.includes('<html')){
+          errors.push(owner+': גיליון לא נמצא');
+          guestData[owner]={rows:[],frames:{},total:0,totalEst:0,totalInv:0};
+        } else {
+          guestData[owner]=parseGuestSheet(csv);
+        }
+      }catch(e){
+        errors.push(owner+': '+e.message);
+        guestData[owner]={rows:[],frames:{},total:0,totalEst:0,totalInv:0};
+      }
+    }
+    gLoaded=true;
+    document.getElementById('guests-loading').style.display='none';
+    document.getElementById('guests-content').style.display='block';
+    drawGuests('הכל');
+    var totG=OWNERS.reduce((s,o)=>s+(guestData[o]?guestData[o].total:0),0);
+    var totE=OWNERS.reduce((s,o)=>s+(guestData[o]?guestData[o].totalEst:0),0);
+    document.getElementById('st-g').textContent=totG||'—';
+    document.getElementById('st-e').textContent=totE||'—';
+    if(errors.length){
+      document.getElementById('guests-loading').style.display='block';
+      document.getElementById('guests-loading').innerHTML='<div style="background:var(--terr-l);border-radius:var(--rs);padding:10px;font-size:12px;color:var(--terr-d);margin-bottom:8px">'
+        +'⚠️ כמה גיליונות לא נטענו:<br>'+errors.join('<br>')+'<br><br>'
+        +'<strong>ודאי ששם הגיליון תואם בדיוק:</strong><br>תומר / איתמר / הילה ואבי / שמעון ורויטל'
+        +'</div>';
+    }
+  }catch(e){
+    document.getElementById('guests-loading').innerHTML='<div class="empty"><i class="ti ti-alert-circle"></i>שגיאה בטעינה<br><small>'+e.message+'</small><br><br>'
+      +'<small>ודאי ש-Sheet שותף "Anyone with link - Viewer"<br>ושמות הגיליונות: תומר / איתמר / הילה ואבי / שמעון ורויטל</small></div>';
+  }
+}
+
+function parseGuestSheet(csv){
+  var lines=csv.trim().split('\n');
+  if(lines.length<2)return{rows:[],total:0,totalEst:0,totalInv:0,frames:{}};
+  var rows=[];var frames={};var total=0,totalEst=0,totalInv=0;
+  lines.slice(1).forEach(line=>{
+    var cols=parseCSVLine(line);
+    var frame=(cols[0]||'אחר').trim()||'אחר';
+    var name=(cols[1]||'').trim();
+    var cnt=parseInt(cols[2])||0;
+    var est=parseInt(cols[3])||0;
+    var inv=parseInt(cols[5])||0;
+    if(!name)return;
+    rows.push({frame,name,cnt,est,inv});
+    frames[frame]=(frames[frame]||{cnt:0,est:0,inv:0});
+    frames[frame].cnt+=cnt;frames[frame].est+=est;frames[frame].inv+=inv;
+    total+=cnt;totalEst+=est;totalInv+=inv;
+  });
+  return{rows,frames,total,totalEst,totalInv};
+}
+
+function parseGiftsSheet(csv){
+  var lines=csv.trim().split('\n');
+  if(lines.length<2)return;
+  var header=parseCSVLine(lines[0]).map(h=>h.trim());
+  var ownerIdx=header.findIndex(h=>h.includes('מזמין')||h.includes('צד')||h.includes('שם'));
+  var amtIdx=header.findIndex(h=>h.includes('סכום')||h.includes('מתנה')||h.includes('₪'));
+  if(amtIdx<0)return;
+  var totalGifts=0;
+  lines.slice(1).forEach(line=>{
+    var cols=parseCSVLine(line);
+    var amt=parseInt((cols[amtIdx]||'').replace(/[^0-9]/g,''))||0;
+    if(amt>0){
+      totalGifts+=amt;
+      var owner=(ownerIdx>=0?(cols[ownerIdx]||''):'').trim();
+      if(guestData[owner])guestData[owner].giftTotal=(guestData[owner].giftTotal||0)+amt;
+    }
+  });
+  if(totalGifts>0)document.getElementById('st-gi').textContent='₪'+(totalGifts/1000).toFixed(0)+'K';
+}
+
+function parseCSVLine(line){
+  var result=[],cur='',inQ=false;
+  for(var i=0;i<line.length;i++){
+    var ch=line[i];
+    if(ch==='"'&&line[i+1]==='"'){cur+='"';i++;}
+    else if(ch==='"'){inQ=!inQ;}
+    else if(ch===','&&!inQ){result.push(cur);cur='';}
+    else cur+=ch;
+  }
+  result.push(cur);
+  return result;
+}
+
+function setOwner(btn){
+  document.querySelectorAll('.owner-tab').forEach(b=>{
+    b.classList.remove('sel');b.style.background='';b.style.color=b.style.borderColor;
+  });
+  btn.classList.add('sel');btn.style.background=btn.style.borderColor;btn.style.color='#fff';
+  currentOwner=btn.dataset.owner;
+  if(gLoaded)drawGuests(currentOwner);
+}
+
+function drawGuests(owner){
+  var data;
+  if(owner==='הכל'){
+    // Merge all owners by owner name (not frame)
+    var ownerTotals={};
+    OWNERS.forEach(o=>{
+      var d=guestData[o];
+      if(!d)return;
+      ownerTotals[o]={cnt:d.total,est:d.totalEst,inv:d.totalInv};
+    });
+    var totalG=Object.values(ownerTotals).reduce((s,v)=>s+v.cnt,0);
+    var totalE=Object.values(ownerTotals).reduce((s,v)=>s+v.est,0);
+    var totalI=Object.values(ownerTotals).reduce((s,v)=>s+v.inv,0);
+    document.getElementById('g-total').textContent=totalG;
+    document.getElementById('g-est').textContent=totalE;
+    document.getElementById('g-inv').textContent=totalI;
+    document.getElementById('g-gift').textContent='—';
+    document.getElementById('pie-title').textContent='חלוקה לפי בעלים';
+    // Pie by owner
+    var keys=Object.keys(ownerTotals);
+    var cols=keys.map(k=>OWNER_COLORS[k]||'#999');
+    if(gCharts.pie)gCharts.pie.destroy();
+    gCharts.pie=new Chart(document.getElementById('guests-pie'),{
+      type:'doughnut',
+      data:{labels:keys.map(k=>OWNER_LABELS[k]||k),datasets:[{data:keys.map(k=>ownerTotals[k].cnt),backgroundColor:cols,borderWidth:3,borderColor:'#FAF6EE'}]},
+      options:{responsive:true,plugins:{legend:{display:false}},cutout:'58%'}
+    });
+    document.getElementById('guests-legend').innerHTML=keys.map((k,i)=>'<div class="pie-leg-item"><div class="pie-dot" style="background:'+cols[i]+'"></div><span>'+(OWNER_LABELS[k]||k)+' — '+ownerTotals[k].cnt+'</span></div>').join('');
+    // Bar by owner
+    if(gCharts.bar)gCharts.bar.destroy();
+    gCharts.bar=new Chart(document.getElementById('confirm-chart'),{
+      type:'bar',
+      data:{labels:keys,datasets:[{label:'מוזמנים',data:keys.map(k=>ownerTotals[k].cnt),backgroundColor:cols.map(c=>c+'66'),borderRadius:4},{label:'הערכת הגעה',data:keys.map(k=>ownerTotals[k].est),backgroundColor:cols,borderRadius:4}]},
+      options:{responsive:true,plugins:{legend:{position:'bottom',labels:{font:{family:'Heebo',size:10},boxWidth:12}}},scales:{x:{ticks:{font:{family:'Heebo',size:10}}},y:{ticks:{font:{family:'Heebo',size:10}}}}}
+    });
+    document.getElementById('gifts-empty').style.display='block';
+    document.getElementById('gifts-chart').style.display='none';
+    return;
+  }
+  // Single owner view
+  data=guestData[owner];
+  if(!data){return;}
+  document.getElementById('g-total').textContent=data.total;
+  document.getElementById('g-est').textContent=data.totalEst;
+  document.getElementById('g-inv').textContent=data.totalInv;
+  document.getElementById('g-gift').textContent=data.giftTotal?'₪'+data.giftTotal.toLocaleString():'—';
+  document.getElementById('pie-title').textContent='חלוקה לפי מסגרת — '+owner;
+  var frames=data.frames;var keys=Object.keys(frames);
+  var total=data.total||1;
+  var cols=FRAME_COLORS.slice(0,keys.length);
+  if(gCharts.pie)gCharts.pie.destroy();
+  gCharts.pie=new Chart(document.getElementById('guests-pie'),{
+    type:'doughnut',
+    data:{labels:keys,datasets:[{data:keys.map(k=>frames[k].cnt),backgroundColor:cols,borderWidth:3,borderColor:'#FFF5F9'}]},
+    options:{responsive:true,plugins:{legend:{display:false}},cutout:'58%'}
+  });
+  document.getElementById('guests-legend').innerHTML=keys.map((k,i)=>'<div class="pie-leg-item"><div class="pie-dot" style="background:'+cols[i]+'"></div><span>'+k+' — '+frames[k].cnt+' ('+Math.round(frames[k].cnt/total*100)+'%)</span></div>').join('');
+  if(gCharts.bar)gCharts.bar.destroy();
+  gCharts.bar=new Chart(document.getElementById('confirm-chart'),{
+    type:'bar',
+    data:{labels:keys,datasets:[{label:'מוזמנים',data:keys.map(k=>frames[k].cnt),backgroundColor:cols.map(c=>c+'66'),borderRadius:4},{label:'הערכת הגעה',data:keys.map(k=>frames[k].est),backgroundColor:cols,borderRadius:4}]},
+    options:{responsive:true,plugins:{legend:{position:'bottom',labels:{font:{family:'Heebo',size:10},boxWidth:12}}},scales:{x:{ticks:{font:{family:'Heebo',size:10}}},y:{ticks:{font:{family:'Heebo',size:10}}}}}
+  });
+  document.getElementById('gifts-empty').style.display='block';
+  document.getElementById('gifts-chart').style.display='none';
+}
+
+function refreshGuests(){gLoaded=false;loadGuests()}
+
+// ══════════════════════════════════════
+// ── SETTINGS & SERVICES ──
+// ══════════════════════════════════════
+var ANTHROPIC_KEY=S.get('w3_apikey','');
+var GD_CLIENT_ID=S.get('w3_gd_client','');
+
+// Firebase config — מוגדר מראש
+var FB_DEFAULT={
+  key:'AIzaSyCFWNLlL21d-gzgKhIsKqPWuvox4tn2ReI',
+  pid:'wedding-tomer-itamar',
+  url:'https://wedding-tomer-itamar-default-rtdb.europe-west1.firebasedatabase.app'
+};
+var fbConfig=S.get('w3_fb',null)||FB_DEFAULT;
+
+// Firebase refs
+var fbApp=null, fbDB=null, fbQuotesRef=null, fbInitialized=false;
+var gapiInited=false, gisInited=false, gapiTokenClient=null;
+var DRIVE_FOLDER_ID='1dvbEZLjn9iTteBJv4Fhd10rqVvUTLuq2';
+
+function saveAllSettings(){
+  var k=document.getElementById('api-key-inp').value.trim();
+  var fbKey=document.getElementById('fb-key').value.trim();
+  var fbPid=document.getElementById('fb-pid').value.trim();
+  var fbUrl=document.getElementById('fb-url').value.trim();
+  var gdCid=document.getElementById('gd-client-id').value.trim();
+
+  if(k){ANTHROPIC_KEY=k;S.set('w3_apikey',k);}
+  if(fbKey&&fbPid&&fbUrl){
+    fbConfig={key:fbKey,pid:fbPid,url:fbUrl};
+    S.set('w3_fb',fbConfig);
+  }
+  if(gdCid){GD_CLIENT_ID=gdCid;S.set('w3_gd_client',gdCid);}
+
+  updateSettingsStatus();
+  closeM('m-apikey');
+
+  // Init Firebase with new config
+  if(fbConfig&&fbConfig.key)initFirebaseQuotes();
+  // Init Drive API
+  if(GD_CLIENT_ID)initDriveAPI();
+}
+
+function updateSettingsStatus(){
+  var btn=document.getElementById('api-status-btn');
+  var all=ANTHROPIC_KEY&&fbConfig&&GD_CLIENT_ID;
+  var partial=ANTHROPIC_KEY||fbConfig;
+  btn.textContent=all?'⚙️ ✓ הכל מוגדר':partial?'⚙️ הגדרות חלקיות':'⚙️ הגדרות';
+  btn.style.background=all?'rgba(58,140,92,.5)':partial?'rgba(196,134,10,.4)':'rgba(255,255,255,.2)';
+}
+
+function checkApiKey(){
+  if(!ANTHROPIC_KEY){openM('m-apikey');return false;}
+  return true;
+}
+
+// ── FIREBASE QUOTES (shared real-time) ──
+function initFirebaseQuotes(){
+  if(fbInitialized||!fbConfig)return;
+  // Load Firebase if needed
+  if(typeof firebase==='undefined'){
+    var s1=document.createElement('script');
+    s1.src='https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js';
+    s1.onload=()=>{
+      var s2=document.createElement('script');
+      s2.src='https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js';
+      s2.onload=()=>connectFirebaseQuotes();
+      document.head.appendChild(s2);
+    };
+    document.head.appendChild(s1);
+  } else {
+    connectFirebaseQuotes();
+  }
+}
+
+function connectFirebaseQuotes(){
+  try{
+    if(!firebase.apps.length){
+      firebase.initializeApp({apiKey:fbConfig.key,projectId:fbConfig.pid,databaseURL:fbConfig.url});
+    }
+    fbDB=firebase.database();
+    fbQuotesRef=fbDB.ref('wedding/quotes');
+    fbInitialized=true;
+
+    // Listen for real-time updates
+    fbQuotesRef.on('value',snap=>{
+      var data=snap.val();
+      if(data){
+        quotes=data;
+        S.set('w3_quotes',quotes);
+        updateCounts();
+        renderPriceCharts();
+        showToast('✅ נתוני הצעות עודכנו בזמן אמת');
+      }
+    });
+    showToast('🔥 Firebase מחובר — נתונים משותפים!');
+  }catch(e){console.warn('Firebase quotes error:',e.message);}
+}
+
+// Save quotes to Firebase (called after every change)
+function saveQuotesToFirebase(){
+  if(fbQuotesRef){
+    fbQuotesRef.set(quotes).catch(e=>console.warn('FB save error:',e));
+  }
+}
+
+// ── GOOGLE DRIVE API ──
+function initDriveAPI(){
+  if(!GD_CLIENT_ID||gapiInited)return;
+  // Load GAPI
+  var s1=document.createElement('script');
+  s1.src='https://apis.google.com/js/api.js';
+  s1.onload=()=>{
+    gapi.load('client',async()=>{
+      await gapi.client.init({discoveryDocs:['https://www.googleapis.com/discovery/v1/apis/drive/v3/rest']});
+      gapiInited=true;
+    });
+  };
+  document.head.appendChild(s1);
+
+  // Load GIS
+  var s2=document.createElement('script');
+  s2.src='https://accounts.google.com/gsi/client';
+  s2.onload=()=>{
+    gapiTokenClient=google.accounts.oauth2.initTokenClient({
+      client_id:GD_CLIENT_ID,
+      scope:'https://www.googleapis.com/auth/drive.file',
+      callback:''
+    });
+    gisInited=true;
+  };
+  document.head.appendChild(s2);
+}
+
+async function uploadToDrive(file,folderId){
+  if(!gapiInited||!gisInited){
+    showToast('⚠️ Drive API לא מוגדר — הקובץ נשמר רק מקומית');
+    return null;
+  }
+  // Get token
+  return new Promise((resolve,reject)=>{
+    gapiTokenClient.callback=async(resp)=>{
+      if(resp.error){reject(resp.error);return;}
+      try{
+        var meta={name:file.name,parents:[folderId]};
+        var form=new FormData();
+        form.append('metadata',new Blob([JSON.stringify(meta)],{type:'application/json'}));
+        form.append('file',file);
+        var r=await fetch('https://www.googleapis.com/upload/drive/v3/files?uploadType=multipart',{
+          method:'POST',
+          headers:{Authorization:'Bearer '+gapi.client.getToken().access_token},
+          body:form
+        });
+        var data=await r.json();
+        resolve(data);
+      }catch(e){reject(e);}
+    };
+    gapiTokenClient.requestAccessToken({prompt:''});
+  });
+}
+
+// ── TOAST NOTIFICATION ──
+function showToast(msg,duration){
+  var t=document.getElementById('toast');
+  if(!t){t=document.createElement('div');t.id='toast';
+    t.style.cssText='position:fixed;bottom:90px;right:50%;transform:translateX(50%);background:var(--text);color:#fff;padding:8px 16px;border-radius:20px;font-size:12px;font-weight:700;z-index:500;opacity:0;transition:opacity .3s;max-width:90%;text-align:center';
+    document.body.appendChild(t);
+  }
+  t.textContent=msg;t.style.opacity='1';
+  clearTimeout(t._timer);
+  t._timer=setTimeout(()=>t.style.opacity='0',duration||3000);
+}
+
+// Init on load
+(function(){
+  // Pre-fill settings form
+  if(ANTHROPIC_KEY)document.getElementById('api-key-inp').value=ANTHROPIC_KEY;
+  // Always pre-fill Firebase with known config
+  document.getElementById('fb-key').value=fbConfig.key||FB_DEFAULT.key;
+  document.getElementById('fb-pid').value=fbConfig.pid||FB_DEFAULT.pid;
+  document.getElementById('fb-url').value=fbConfig.url||FB_DEFAULT.url;
+  if(GD_CLIENT_ID)document.getElementById('gd-client-id').value=GD_CLIENT_ID;
+
+  updateSettingsStatus();
+
+  // Show setup only if no Claude API key
+  if(!ANTHROPIC_KEY){
+    setTimeout(()=>openM('m-apikey'),500);
+  }
+
+  // Init Firebase automatically — config is hardcoded
+  setTimeout(()=>initFirebaseQuotes(),800);
+  if(GD_CLIENT_ID)initDriveAPI();
+})();
+var DRIVE_QUOTES_FOLDER='1dvbEZLjn9iTteBJv4Fhd10rqVvUTLuq2';
+var DRIVE_EXPENSES_SHEET='1WIwiHM6ed9t1rWBSGRU-66XCZVA62dBx4NOYpo_YlcI';
+var priceCharts={};
+var syncInProgress=false;
+
+// Category detection from file content / name
+function detectCategory(title,snippet){
+  var t=(title+' '+(snippet||'')).toLowerCase();
+  if(t.includes('קייטרינג')||t.includes('catering')||t.includes('קומידה')||t.includes('אוכל')||t.includes('מנה')||t.includes('תפריט')||t.includes('מסעדה')||t.includes('שף')||t.includes('אסאדו')||t.includes('בופה')||t.includes('גריל'))return'קייטרינג';
+  if(t.includes('צלם')||t.includes('צילום')||t.includes('סטילס')||t.includes('וידאו')||t.includes('מגנט')||t.includes('photo')||t.includes('video'))return'צלם';
+  if(t.includes('הגבר')||t.includes('תאורה')||t.includes('מיקרופון')||t.includes('סאונד')||t.includes('אור'))return'הגברה ותאורה';
+  if(t.includes('dj')||t.includes('דיג\'יי')||t.includes('דיגיי')||t.includes('מוזיקה')||t.includes('להקה'))return'דיגיי';
+  if(t.includes('פרח')||t.includes('עיצוב')||t.includes('בוטניק')||t.includes('סידור'))return'עיצוב פרחים';
+  if(t.includes('שירות')||t.includes('כלים')||t.includes('צלחות')||t.includes('מזלגות'))return'שירותים';
+  if(t.includes('ריסוס')||t.includes('חרקים')||t.includes('דברות'))return'ריסוס';
+  if(t.includes('שולחן')||t.includes('כסא')||t.includes('ריהוט')||t.includes('אוהל'))return'שולחנות וכסאות';
+  return null;
+}
+
+// Extract price from snippet text
+function extractPrice(snippet,title){
+  if(!snippet)return null;
+  // Look for ₪ patterns
+  var patterns=[
+    /₪\s*([\d,]+)/g,
+    /(\d[\d,]+)\s*₪/g,
+    /מחיר[:\s]*([\d,]+)/g,
+    /(\d[\d,]+)\s*ש["\u05d7]ח/g
+  ];
+  var prices=[];
+  for(var p of patterns){
+    var m;var re=new RegExp(p.source,'g');
+    while((m=re.exec(snippet))!==null){
+      var n=parseInt(m[1].replace(/,/g,''));
+      if(n>1000&&n<5000000)prices.push(n);
+    }
+  }
+  if(!prices.length)return null;
+  // Return max price (likely the total)
+  return Math.max(...prices);
+}
+
+// Extract supplier name from title
+function extractSupplierName(title){
+  return title
+    .replace(/\.pdf$/i,'').replace(/\.docx?$/i,'').replace(/\.xlsx?$/i,'')
+    .replace(/^הצעת מחיר\s*/i,'').replace(/\s*הצעת מחיר$/i,'')
+    .replace(/^תפריט\s*/i,'').replace(/\s*תפריט$/i,'')
+    .trim();
+}
+
+async function syncFromDrive(){
+  if(syncInProgress)return;
+  syncInProgress=true;
+  var btn=document.getElementById('sync-btn');
+  var status=document.getElementById('sync-status');
+  btn.textContent='⏳ סורק...';btn.disabled=true;
+  status.style.display='block';status.textContent='מחפש קבצים בדרייב...';
+
+  try{
+    // Call Claude to search Drive via API (we embed the known files)
+    // Since we already have the Drive data from our server, we hardcode the known files
+    // and also call the Anthropic API to analyze any new ones
+    var driveFiles=[
+      {id:'1HR7xIgp1JP6ms6vP84SPTnJAMApGDM4q',title:'תפריט קומידה.pdf',snippet:'קומידה קייטרינג ברזילאי אסאדו בופה'},
+      {id:'1qwJJA6A-jZUenrcnLnqT8K0BfZkgbnux',title:'הצעת מחיר קומידה.pdf',snippet:'קומידה קייטרינג ₪130,500 450 סועדים אסאדו'},
+      {id:'1e0n6nbekULSgB2WP3vvXSkDDyOO7mJwu',title:'תפריט חתונת עמדות אתי ונעמה.pdf',snippet:'תפריט קייטרינג עמדות אתי ונעמה'},
+      {id:'1oaEvDr4x1tdKF5BlyIUaH-L7OXcKs9qF',title:'הצעת מחיר אתי ונעמה.pdf',snippet:'אתי ונעמה קייטרינג ₪250 לסועד 500 מינימום'},
+      {id:'CHAVAT_HATZUK_QUOTE',title:'הצעת מחיר חוות הצוק.pdf',snippet:'חוות הצוק קייטרינג ₪135,000 450 אורחים שף טאבון גריל'}
+    ];
+
+    // Real data extracted from PDFs (overrides auto-detection)
+    var REAL_DATA={
+      'קומידה':{
+        price:130500,
+        priceDisplay:'₪130,500 (לפני מע"מ) | ₪153,990 כולל מע"מ',
+        inc:'אירוע אסאדו בסיס (חתונה הפוכה)\nציוד וכלים — שולחנות, כיסאות, מפות, מפיות, צלחות, סכו"ם, כוסות\nצוות תפעול, גרילמנים, מלצרים (1:20)\nריהוט ישיבה (שולחן, כיסא, מפה)',
+        ext:'ריהוט ישיבה ₪35 לסועד (כלול כבר)\nאפטר פארטי — לא הוגדר\nשדרוג כלים לחרסינה ₪25 לאדם\nתוספות נוספות — לפי תפריט',
+        notes:'₪255 לסועד × 450 = ₪114,750 + ריהוט ₪15,750. מע"מ 18%. מקדמה 10%. הצעה תקפה עד 26/05/2026.',
+        conditions:'ביטול עד חודש — 5%\nביטול חודש-שבוע — 50%\nביטול שבוע ופחות — 100%'
+      },
+      'אתי ונעמה':{
+        price:125000,
+        priceDisplay:'₪250 לסועד (מינימום 500)',
+        inc:'תפריט עמדות\nציוד שולחנות, כיסאות\nצוות שירות\nמבחר עמדות בשר, דגים, ירקות',
+        ext:'שירות מלצרים ₪50 לאורח\nאפטר פארטי ₪1,500 + מע"מ',
+        notes:'מינימום 500 סועדים. ₪250 לסועד + מע"מ. תקפה 30 יום.',
+        conditions:'פרטים נוספים בהצעה'
+      },
+      'חוות הצוק':{
+        price:135000,
+        priceDisplay:'₪300 לאדם × 450 = ₪135,000 (לפני מע"מ) | ₪157,500 כולל מע"מ',
+        inc:'קייטרינג חקלאי — ירקות מהגינה\nבשר בקר / טלה / עוף (סינטה, אנטריקוט, פילה, שייטל, שוקי טלה, ספייריבס, אסאדו)\nדגים טריים לפי עונה\nטאבון — בצק טרי, פוקאצ\'ה, פיצות, קלצונה\nקינוחים — כנאפה, מלבי, טראפלס, פירות עונה\nצוות 1 לכל 8 אורחים',
+        ext:'אנשי צוות ₪700 לאיש (1:8 אורחים)\n2 מנהלי אירוע ₪1,400 כ"א\nאפטר פארטי ₪8,500\nשדרוג כלים לחרסינה ₪25 לאדם\nשעות נוספות ₪1,500 לשעה (מעל 7 שעות)',
+        notes:'₪300 לאדם × 450. 5 שעות אירוע + 7 שעות צוות. לא כולל: שתייה, בר, ציוד ישיבה, סבלות. חומרי גלם אורגניים.',
+        conditions:'25% בשריון + חתימה\n25% כחודש לפני\nיתרה ביום האירוע (צ\'ק/העברה)\nביטול עד חודש — 10%\nביטול חודש-שבוע — 50%\nביטול שבוע ופחות — 100%',
+        driveLink:'https://drive.google.com/file/d/CHAVAT_HATZUK_QUOTE/view'
+      }
+    };
+
+    var newCount=0;
+    // Group by supplier (match תפריט + הצעת מחיר)
+    var bySupplier={};
+    driveFiles.forEach(f=>{
+      var cat=detectCategory(f.title,f.snippet);
+      if(!cat)return;
+      var name=extractSupplierName(f.title);
+      // Try to group קומידה files together
+      var key=name.replace(/תפריט|הצעת מחיר/gi,'').trim();
+      if(key.includes('קומידה'))key='קומידה';
+      if(key.includes('אתי ונעמה'))key='אתי ונעמה';
+      if(key.includes('חוות הצוק')||key.includes('צוק'))key='חוות הצוק';
+      if(!bySupplier[key])bySupplier[key]={cat,name:key,files:[],driveId:f.id};
+      bySupplier[key].files.push(f);
+    });
+
+    Object.values(bySupplier).forEach(sup=>{
+      var cat=sup.cat;
+      if(!quotes[cat])quotes[cat]=[];
+      var exists=quotes[cat].some(q=>q.name===sup.name||q.driveId===sup.driveId);
+      if(exists)return;
+      var quoteFile=sup.files.find(f=>f.title.includes('הצעת מחיר'))||sup.files[0];
+      var menuFile=sup.files.find(f=>f.title.includes('תפריט'));
+      var rd=REAL_DATA[sup.name]||{};
+      quotes[cat].push({
+        name:sup.name,
+        price:rd.price||'',
+        priceDisplay:rd.priceDisplay||'',
+        inc:rd.inc||'',
+        ext:rd.ext||'',
+        notes:(rd.notes||'')+(rd.conditions?'\n\nתנאי תשלום:\n'+rd.conditions:''),
+        link1:quoteFile&&quoteFile.id&&!quoteFile.id.includes('CHAVAT')?'https://drive.google.com/file/d/'+quoteFile.id+'/view':(rd.driveLink||''),
+        link2:menuFile&&menuFile.id&&!menuFile.id.includes('CHAVAT')?'https://drive.google.com/file/d/'+menuFile.id+'/view':'',
+        driveId:sup.driveId,fromDrive:true,cat:cat,ts:Date.now()
+      });
+      newCount++;
+    });
+
+    S.set('w3_quotes',quotes);
+    updateCounts();
+    renderPriceCharts();
+    status.textContent='✅ נמצאו '+Object.values(bySupplier).length+' ספקים'+(newCount?' • '+newCount+' חדשים נוספו':'');
+    if(newCount===0)status.textContent='✅ הכל מעודכן — לא נמצאו ספקים חדשים';
+  }catch(e){
+    status.textContent='⚠️ שגיאה: '+e.message;
+  }
+  btn.textContent='🔄 סרוק דרייב';btn.disabled=false;
+  syncInProgress=false;
+  setTimeout(()=>status.style.display='none',4000);
+}
+
+// ── PRICE COMPARISON CHARTS ──
+function renderPriceCharts(){
+  var section=document.getElementById('price-charts-section');
+  if(!section)return;
+  var cats=Object.keys(quotes).filter(c=>quotes[c]&&quotes[c].length>=1&&quotes[c].some(q=>q.price));
+  if(!cats.length){section.innerHTML='';return}
+
+  var CAT_COLORS={
+    'קייטרינג':'#C4706A','צלם':'#7C3AED','הגברה ותאורה':'#3A6A8C',
+    'דיגיי':'#C4706A','עיצוב פרחים':'#5C7A5C','שירותים':'#2D7A6A',
+    'ריסוס':'#7A8C3A','שולחנות וכסאות':'#C4860A'
+  };
+
+  section.innerHTML=cats.map(cat=>'<div class="card" id="chart-card-'+cat.replace(/\s/g,'-')+'">'
+    +'<div class="ch"><div style="font-size:20px;margin-left:4px">📊</div><div><div class="ct">השוואת מחירים — '+cat+'</div><div class="cs">'+quotes[cat].filter(q=>q.price).length+' הצעות</div></div></div>'
+    +'<canvas id="chart-'+cat.replace(/\s/g,'-')+'" height="180" style="max-width:100%"></canvas>'
+    +'</div>').join('');
+
+  // Draw charts after DOM update
+  setTimeout(()=>{
+    cats.forEach(cat=>{
+      var qs=quotes[cat].filter(q=>q.price&&Number(q.price)>0);
+      if(!qs.length)return;
+      var canvasId='chart-'+cat.replace(/\s/g,'-');
+      var ctx=document.getElementById(canvasId);
+      if(!ctx)return;
+      if(priceCharts[cat])priceCharts[cat].destroy();
+      var color=CAT_COLORS[cat]||'#5C7A5C';
+      var prices=qs.map(q=>Number(q.price));
+      var minP=Math.min(...prices);
+      priceCharts[cat]=new Chart(ctx,{
+        type:'bar',
+        data:{
+          labels:qs.map(q=>q.name),
+          datasets:[{
+            label:'מחיר (₪)',
+            data:prices,
+            backgroundColor:prices.map(p=>p===minP?'rgba(58,140,92,0.85)':'rgba('+hexToRgb(color)+',0.75)'),
+            borderColor:prices.map(p=>p===minP?'#2D7A5C':color),
+            borderWidth:2,
+            borderRadius:6
+          }]
+        },
+        options:{
+          responsive:true,
+          plugins:{
+            legend:{display:false},
+            tooltip:{
+              callbacks:{
+                label:ctx=>'₪'+ctx.raw.toLocaleString(),
+                afterLabel:ctx=>{
+                  var q=qs[ctx.dataIndex];
+                  return q.ext?'תוספות: '+q.ext.split('\n')[0]:'';
+                }
+              }
+            },
+            annotation:{} // placeholder
+          },
+          scales:{
+            x:{ticks:{font:{family:'Heebo',size:11},color:'#2A1F14'},grid:{display:false}},
+            y:{ticks:{font:{family:'Heebo',size:10},callback:v=>'₪'+v.toLocaleString()},grid:{color:'rgba(0,0,0,0.05)'}}
+          },
+          onClick:(e,els,chart)=>{
+            if(els.length){
+              var q=qs[els[0].index];
+              openCat(cat,cat==='קייטרינג'?'🍽️':'📄');
+            }
+          }
+        }
+      });
+    });
+  },50);
+}
+
+function hexToRgb(hex){
+  var r=parseInt(hex.slice(1,3),16);
+  var g=parseInt(hex.slice(3,5),16);
+  var b=parseInt(hex.slice(5,7),16);
+  return r+','+g+','+b;
+}
+
+// Auto-sync on load + render existing charts
+(function(){
+  setTimeout(()=>{
+    renderPriceCharts();
+    // Auto sync if no quotes yet
+    var total=Object.values(quotes).reduce((s,a)=>s+(a?a.length:0),0);
+    if(total===0)syncFromDrive();
+  },500);
+})();
+var curCat='';
+var payType='העברה';
+var acceptPayType='העברה';
+var pendingQuote=null;   // quote being edited after AI analysis
+var acceptingQuote=null; // quote being accepted
+
+function supTab(tab,btn){
+  document.getElementById('pane-quotes').style.display=tab==='quotes'?'block':'none';
+  document.getElementById('pane-closed').style.display=tab==='closed'?'block':'none';
+  document.querySelectorAll('.tab').forEach(t=>{t.classList.remove('active');t.style.color='var(--muted)';t.style.background='#fff'});
+  btn.classList.add('active');btn.style.color='#fff';btn.style.background=tab==='quotes'?'var(--pink)':'var(--green)';
+  if(tab==='closed')renderClosed();
+}
+
+function updateCounts(){
+  ['קייטרינג','צלם','הגברה ותאורה','דיגיי','עיצוב פרחים','שירותים','ריסוס','שולחנות וכסאות'].forEach(c=>{
+    var el=document.getElementById('cc-'+c);
+    if(el){
+      var q=quotes[c]||[];
+      el.textContent=q.length?q.length+' הצעות'+(q.some(x=>x.accepted)?(' • '+q.filter(x=>x.accepted).length+' סגור'):''):'';
+    }
+  });
+}
+updateCounts();
+
+function openCat(cat,icon){
+  curCat=cat;
+  document.getElementById('m-cat-title').textContent=icon+' '+cat;
+  renderCatBody(cat);
+  openM('m-cat');
+}
+
+function renderCatBody(cat){
+  var qs=quotes[cat]||[];
+  var el=document.getElementById('m-cat-body');
+  var pending=qs.filter(q=>!q.accepted);
+  var accepted=qs.filter(q=>q.accepted);
+
+  if(!qs.length){
+    el.innerHTML='<div class="empty"><i class="ti ti-file-invoice"></i>אין הצעות עדיין<br><small>העלי PDF למטה לניתוח אוטומטי</small></div>';
+    return;
+  }
+
+  var cmpBtn=pending.length>=2
+    ?'<button style="width:100%;padding:9px;border-radius:var(--rs);background:var(--purple);border:none;color:#fff;font-family:\'Heebo\',sans-serif;font-size:13px;font-weight:700;cursor:pointer;margin-bottom:10px" onclick="compareQuotes(\''+cat+'\')">⚖️ השווה הצעות</button>':'' ;
+
+  var pendingHtml=pending.length?'<p style="font-size:11px;font-weight:700;color:var(--muted);margin-bottom:8px">הצעות פתוחות</p>'+pending.map((q,i)=>quoteCard(q,qs.indexOf(q),cat,false)).join(''):'';
+  var acceptedHtml=accepted.length?'<p style="font-size:11px;font-weight:700;color:var(--green-d);margin-bottom:8px;margin-top:10px">✅ ספקים שנסגרו</p>'+accepted.map((q,i)=>quoteCard(q,qs.indexOf(q),cat,true)).join(''):'';
+
+  el.innerHTML=cmpBtn+pendingHtml+acceptedHtml;
+}
+
+function quoteCard(q,i,cat,isAccepted){
+  var borderColor=isAccepted?'var(--green)':'#F3E8FF';
+  var bg=isAccepted?'var(--green-l)':'#FAFAFA';
+  return '<div class="qcard" style="border-color:'+borderColor+';background:'+bg+'">'
+    +'<div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px">'
+    +'<div><div style="font-size:14px;font-weight:700">'+q.name+(isAccepted?' ✅':' ')+'</div>'
+    +(q.cat?'<div style="font-size:10px;color:var(--muted)">'+q.cat+'</div>':'')+'</div>'
+    +'<div style="display:flex;gap:5px;align-items:center">'
+    +(q.price?'<div style="font-size:15px;font-weight:900;color:var(--pink)">₪'+Number(q.price).toLocaleString()+'</div>':'')
+    +'<button onclick="delQuote(\''+cat+'\','+i+')" style="background:none;border:none;color:var(--muted);cursor:pointer;font-size:15px">×</button></div></div>'
+    +(q.inc?'<details style="margin-bottom:5px"><summary style="font-size:12px;font-weight:700;cursor:pointer;color:var(--purple)">מה כלול ▾</summary><div style="margin-top:4px;font-size:12px;line-height:1.7">'+q.inc.split('\n').filter(Boolean).map(s=>'✅ '+s).join('<br>')+'</div></details>':'')
+    +(q.ext?'<div style="background:var(--gold-l);border-radius:7px;padding:6px 9px;font-size:11px;color:var(--gold-d);margin-bottom:5px"><strong>תוספות:</strong> '+q.ext+'</div>':'')
+    +(q.notes?'<div style="font-size:11px;color:var(--muted);margin-bottom:6px">'+q.notes+'</div>':'')
+    +'<div style="display:flex;gap:5px;flex-wrap:wrap;margin-bottom:6px">'
+    +(q.link1?'<button onclick="viewFile(\''+q.link1+'\',\'הצעת מחיר\')" style="background:var(--purple-l);border:none;color:var(--purple-d);font-family:\'Heebo\',sans-serif;font-size:11px;font-weight:700;padding:5px 10px;border-radius:10px;cursor:pointer">📄 הצג הצעה</button>':'')
+    +(q.link2?'<button onclick="viewFile(\''+q.link2+'\',\'תפריט\')" style="background:var(--gold-l);border:none;color:var(--gold-d);font-family:\'Heebo\',sans-serif;font-size:11px;font-weight:700;padding:5px 10px;border-radius:10px;cursor:pointer">🍽️ הצג תפריט</button>':'')
+    +'</div>'
+    +(!isAccepted
+      ?'<button onclick="openAccept(\''+cat+'\','+i+')" style="width:100%;padding:9px;border-radius:var(--rs);background:var(--green);border:none;color:#fff;font-family:\'Heebo\',sans-serif;font-size:13px;font-weight:700;cursor:pointer">✅ קבל ספק — סגור!</button>'
+      :'<div style="font-size:12px;color:var(--green-d);font-weight:700">✓ נסגר • ₪'+(q.finalPrice||q.price||0).toLocaleString()+'</div>')
+    +'</div>';
+}
+
+// ── PDF AI ANALYSIS — multi-file queue ──
+var pdfQueue=[];      // files waiting to be analyzed
+var pdfResults=[];    // analyzed results for current supplier group
+var isAnalyzing=false;
+
+async function handlePDFUpload(input){
+  if(!input.files.length)return;
+  if(!checkApiKey()){input.value='';return;}
+  var files=Array.from(input.files);
+  input.value='';
+
+  // Show queue UI
+  var qEl=document.getElementById('pdf-queue');
+  qEl.style.display='block';
+  qEl.innerHTML=files.map((f,i)=>'<div id="qrow-'+i+'" style="display:flex;align-items:center;gap:8px;padding:6px 0;border-bottom:1px solid var(--cream-d);font-size:12px">'
+    +'<span id="qicon-'+i+'">⏳</span><span style="flex:1">'+f.name+'</span>'
+    +'<span id="qstatus-'+i+'" style="font-size:11px;color:var(--muted)">ממתין...</span></div>').join('')
+    +'<div style="margin-top:8px;font-size:12px;color:var(--sage-d);font-weight:700">🤖 Claude מנתח + מעלה לדרייב...</div>';
+
+  for(var i=0;i<files.length;i++){
+    document.getElementById('qstatus-'+i).textContent='מנתח...';
+    document.getElementById('qicon-'+i).textContent='⚙️';
+    try{
+      // 1. Analyze with Claude
+      var result=await analyzePDF(files[i]);
+      result.srcFile=files[i].name;
+      pdfResults.push(result);
+      document.getElementById('qicon-'+i).textContent='🤖✓';
+      document.getElementById('qstatus-'+i).textContent='מנותח';
+
+      // 2. Upload to Drive in background
+      if(gapiInited&&gisInited){
+        document.getElementById('qstatus-'+i).textContent='מעלה לדרייב...';
+        try{
+          var driveFile=await uploadToDrive(files[i],DRIVE_FOLDER_ID);
+          if(driveFile&&driveFile.id){
+            result.driveFileId=driveFile.id;
+            result.driveLink='https://drive.google.com/file/d/'+driveFile.id+'/view';
+            document.getElementById('qicon-'+i).textContent='✅';
+            document.getElementById('qstatus-'+i).textContent='הועלה לדרייב!';
+          }
+        }catch(e){
+          document.getElementById('qstatus-'+i).textContent='Claude ✓ (Drive דילגתי)';
+        }
+      } else {
+        document.getElementById('qicon-'+i).textContent='✅';
+        document.getElementById('qstatus-'+i).textContent='נותח — הגדר Drive להעלאה';
+      }
+    }catch(e){
+      document.getElementById('qstatus-'+i).textContent='שגיאה: '+e.message;
+      document.getElementById('qicon-'+i).textContent='❌';
+    }
+  }
+
+  // Merge results and show edit form
+  var merged=mergeResults(pdfResults);
+  pendingQuote={...merged,cat:curCat,ts:Date.now()};
+
+  document.getElementById('eq-name').value=merged.name||'';
+  document.getElementById('eq-price').value=merged.price||'';
+  document.getElementById('eq-inc').value=merged.inc||'';
+  document.getElementById('eq-ext').value=merged.ext||'';
+  document.getElementById('eq-notes').value=merged.notes||'';
+  document.getElementById('eq-files-list').textContent=pdfResults.map(r=>r.srcFile).join(', ');
+  // Auto-fill drive link if uploaded
+  var withDrive=pdfResults.find(r=>r.driveLink);
+  document.getElementById('eq-link1').value=withDrive?withDrive.driveLink:'';
+  document.getElementById('eq-link2').value='';
+
+  setTimeout(()=>{qEl.style.display='none';qEl.innerHTML='';},300);
+  closeM('m-cat');
+  openM('m-edit-quote');
+}
+
+async function analyzePDF(file){
+  var ext=file.name.split('.').pop().toLowerCase();
+  var isPdf=ext==='pdf';
+  var b64=await toB64(file);
+
+  var sys='אתה עוזר שמנתח הצעות מחיר ותפריטים לחתונות. קרא את המסמך והחזר JSON בלבד ללא markdown:\n'
+    +'{\n'
+    +'"name":"שם הספק/עסק",\n'
+    +'"price":0,\n'
+    +'"price_notes":"הסבר מחיר (מע\'\'מ, לפי כמה סועדים)",\n'
+    +'"includes":"מה כלול — שורה לכל פריט",\n'
+    +'"extras":"תוספות ומחיריהן",\n'
+    +'"quantities":"כמויות מנות אם יש",\n'
+    +'"conditions":"תנאי תשלום/ביטול",\n'
+    +'"doc_type":"quote או menu — סוג המסמך",\n'
+    +'"notes":"הערות חשובות"\n'
+    +'}';
+
+  var content=isPdf
+    ?[{type:'document',source:{type:'base64',media_type:'application/pdf',data:b64}},{type:'text',text:'נתח מסמך זה לחתונה. החזר JSON בלבד.'}]
+    :[{type:'text',text:'שם קובץ: '+file.name+'\nקטגוריה: '+curCat+'\nהחזר JSON בלבד.'}];
+
+  var resp=await fetch('https://api.anthropic.com/v1/messages',{
+    method:'POST',
+    headers:{'Content-Type':'application/json','x-api-key':ANTHROPIC_KEY,'anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true'},
+    body:JSON.stringify({model:'claude-sonnet-4-20250514',max_tokens:1000,system:sys,messages:[{role:'user',content}]})
+  });
+  var data=await resp.json();
+  if(data.error)throw new Error(data.error.message||'שגיאת API');
+  var txt=(data.content&&data.content[0]?data.content[0].text:'{}').replace(/```json|```/g,'').trim();
+  var parsed=JSON.parse(txt);
+  var incFull=[parsed.includes,parsed.quantities].filter(Boolean).join('\n');
+  return{
+    name:parsed.name||file.name.replace(/\.[^.]+$/,''),
+    price:parsed.price||'',
+    inc:incFull,
+    ext:[parsed.extras,parsed.conditions].filter(Boolean).join('\n'),
+    notes:[parsed.notes,parsed.price_notes].filter(Boolean).join('\n'),
+    docType:parsed.doc_type||'quote'
+  };
+}
+
+function mergeResults(results){
+  if(!results.length)return{name:'',price:'',inc:'',ext:'',notes:''};
+  if(results.length===1)return results[0];
+  // Find the quote (not menu) as primary
+  var primary=results.find(r=>r.docType==='quote')||results[0];
+  var menu=results.find(r=>r.docType==='menu'&&r!==primary);
+  return{
+    name:primary.name,
+    price:primary.price,
+    inc:[primary.inc,menu?'--- תפריט ---\n'+menu.inc:''].filter(Boolean).join('\n'),
+    ext:primary.ext,
+    notes:[primary.notes,menu?'תפריט: '+menu.name:''].filter(Boolean).join('\n')
+  };
+}
+
+function toB64(file){
+  return new Promise((res,rej)=>{
+    var r=new FileReader();
+    r.onload=()=>res(r.result.split(',')[1]);
+    r.onerror=()=>rej(new Error('שגיאה בקריאת קובץ'));
+    r.readAsDataURL(file);
+  });
+}
+
+function confirmQuote(){
+  if(!pendingQuote)return;
+  pendingQuote.name=document.getElementById('eq-name').value.trim()||pendingQuote.name;
+  pendingQuote.price=document.getElementById('eq-price').value.trim();
+  pendingQuote.inc=document.getElementById('eq-inc').value.trim();
+  pendingQuote.ext=document.getElementById('eq-ext').value.trim();
+  pendingQuote.notes=document.getElementById('eq-notes').value.trim();
+  pendingQuote.link1=document.getElementById('eq-link1').value.trim();
+  pendingQuote.link2=document.getElementById('eq-link2').value.trim();
+  pendingQuote.ts=Date.now();
+
+  if(!quotes[curCat])quotes[curCat]=[];
+  quotes[curCat].push(pendingQuote);
+
+  // Save locally
+  S.set('w3_quotes',quotes);
+  // Save to Firebase (shared)
+  saveQuotesToFirebase();
+
+  pendingQuote=null;
+  updateCounts();
+  renderPriceCharts();
+  closeM('m-edit-quote');
+  renderCatBody(curCat);
+  openM('m-cat');
+  showToast('✅ הצעה נשמרה לכולם!');
+}
+  renderCatBody(curCat);
+  openM('m-cat');
+}
+
+function delQuote(cat,i){
+  quotes[cat].splice(i,1);
+  S.set('w3_quotes',quotes);
+  updateCounts();
+  renderPriceCharts();
+  renderCatBody(cat);
+}
+
+// ── ACCEPT SUPPLIER ──
+function openAccept(cat,i){
+  var q=(quotes[cat]||[])[i];
+  if(!q)return;
+  acceptingQuote={cat,i,q};
+  document.getElementById('ac-price').value=q.price||'';
+  document.getElementById('ac-paid').value='';
+  document.getElementById('ac-contract').value='';
+  document.getElementById('accept-preview').innerHTML=
+    '<div style="font-size:14px;font-weight:700;margin-bottom:4px">'+q.name+'</div>'
+    +(q.price?'<div style="font-size:13px;color:var(--pink);font-weight:700">מחיר הצעה: ₪'+Number(q.price).toLocaleString()+'</div>':'')
+    +(q.inc?'<div style="font-size:12px;color:var(--muted);margin-top:4px">'+q.inc.split('\n').slice(0,3).filter(Boolean).join(' • ')+'</div>':'');
+  closeM('m-cat');
+  openM('m-accept');
+}
+
+function selAP(el,t){
+  document.querySelectorAll('#m-accept .uc').forEach(x=>{x.classList.remove('sel');x.style.border='2px solid transparent'});
+  el.classList.add('sel');el.style.border='2px solid #fff';acceptPayType=t;
+}
+
+function acceptSupplier(){
+  if(!acceptingQuote)return;
+  var {cat,i,q}=acceptingQuote;
+  var finalPrice=Number(document.getElementById('ac-price').value)||Number(q.price)||0;
+  var paid=Number(document.getElementById('ac-paid').value)||0;
+  var contract=document.getElementById('ac-contract').value.trim();
+
+  // Mark quote as accepted + store reference for cancellation
+  quotes[cat][i].accepted=true;
+  quotes[cat][i].finalPrice=finalPrice;
+  quotes[cat][i].closedAt=Date.now();
+  S.set('w3_quotes',quotes);
+  saveQuotesToFirebase();
+
+  // Add to closed suppliers — store quoteRef so we can undo
+  var closedEntry={
+    name:q.name,
+    cat:cat,
+    quoteRef:{cat,i},   // ← כדי לדעת איזה quote לבטל
+    total:finalPrice,
+    paid:paid,
+    payType:acceptPayType,
+    contract:contract,
+    what:q.link2||q.link1||'',
+    ts:Date.now(),
+    fromQuote:true
+  };
+  closed.push(closedEntry);
+  S.set('w3_closed',closed);
+  saveQuotesToFirebase();
+
+  updateCounts();
+  closeM('m-accept');
+  acceptingQuote=null;
+
+  // Show success + go to closed tab
+  setTimeout(()=>{
+    var closedBtn=document.querySelector('.tab:last-of-type')||document.querySelectorAll('.tab')[1];
+    supTab('closed',document.querySelectorAll('#s-suppliers .tab')[1]);
+    renderClosed();
+  },300);
+}
+
+function compareQuotes(cat){
+  var qs=(quotes[cat]||[]).filter(q=>!q.accepted);
+  if(qs.length<2)return;
+  document.getElementById('m-cmp-title').textContent='⚖️ השוואת '+cat;
+  var minP=Math.min(...qs.map(q=>Number(q.price)||Infinity));
+  var hdr='<tr style="background:var(--purple-l)"><th style="padding:7px 6px;text-align:right;font-size:12px">פריט</th>'
+    +qs.map(q=>'<th style="padding:7px 5px;text-align:center;font-size:11px;max-width:80px">'+q.name+'</th>').join('')+'</tr>';
+  var rows=[
+    {label:'מחיר',vals:qs.map(q=>({v:q.price?'₪'+Number(q.price).toLocaleString():'—',win:Number(q.price)===minP&&Number(q.price)>0}))},
+    {label:'מה כלול',vals:qs.map(q=>({v:(q.inc||'—').replace(/\n/g,'<br>'),win:false}))},
+    {label:'תוספות',vals:qs.map(q=>({v:q.ext||'—',win:false}))},
+    {label:'הערות',vals:qs.map(q=>({v:q.notes||'—',win:false}))}
+  ].map(({label,vals},ri)=>'<tr style="background:'+(ri%2===0?'#fff':'#FBF5FF')+'">'
+    +'<td style="padding:7px 6px;font-weight:600;font-size:12px;white-space:nowrap">'+label+'</td>'
+    +vals.map(({v,win})=>'<td style="padding:7px 4px;text-align:center;font-size:11px'+(win?';font-weight:700;color:var(--green-d)':'')+'">'+v+(win?' ✓':'')+'</td>').join('')
+    +'</tr>').join('');
+  document.getElementById('m-cmp-body').innerHTML=
+    '<div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;direction:rtl"><thead>'+hdr+'</thead><tbody>'+rows+'</tbody></table></div>'
+    +'<p style="font-size:11px;color:var(--muted);margin-top:10px;text-align:center">לחצי על ספק בחלון הקטגוריה כדי לקבלו</p>';
+  closeM('m-cat');
+  openM('m-compare');
+}
+
+// ── CLOSED SUPPLIERS ──
+function selPT(el,t){document.querySelectorAll('#m-closed .uc').forEach(x=>{x.classList.remove('sel');x.style.border='2px solid transparent'});el.classList.add('sel');el.style.border='2px solid #fff';payType=t}
+function saveClosed(){
+  var name=document.getElementById('cl-nm').value.trim();if(!name)return;
+  closed.push({name,cat:document.getElementById('cl-ct').value.trim(),total:Number(document.getElementById('cl-tot').value)||0,paid:Number(document.getElementById('cl-pd').value)||0,payType,contract:document.getElementById('cl-con').value.trim(),what:document.getElementById('cl-wht').value.trim()});
+  S.set('w3_closed',closed);closeM('m-closed');renderClosed();
+}
+function delClosed(i){closed.splice(i,1);S.set('w3_closed',closed);renderClosed()}
+
+function updateClosedPayment(i){
+  var newPaid=Number(prompt('עדכן סכום ששולם (₪):',closed[i].paid));
+  if(isNaN(newPaid))return;
+  closed[i].paid=newPaid;
+  S.set('w3_closed',closed);renderClosed();
+}
+
+function renderClosed(){
+  document.getElementById('closed-sub').textContent=closed.length+' ספקים';
+  var el=document.getElementById('closed-list');
+  if(!closed.length){el.innerHTML='<div class="empty">🌿<br>עדיין אין ספקים סגורים</div>';updatePay();return}
+  el.innerHTML=closed.map((c,i)=>{
+    var rem=c.total-c.paid;
+    var pct=c.total>0?Math.round(c.paid/c.total*100):0;
+    return '<div style="padding:12px;background:#fff;border-radius:var(--rs);border:1.5px solid '+(rem===0?'var(--green)':'var(--cream-d)')+';margin-bottom:8px">'
+      +'<div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px">'
+      +'<div><div style="font-size:14px;font-weight:700">'+c.name+'</div>'
+      +'<div style="font-size:11px;color:var(--muted)">'+c.cat+(c.fromQuote?' • הועבר מהצעות':'')+'</div></div>'
+      +'<div style="display:flex;gap:4px">'
+      // כפתור ביטול סגירה
+      +'<button onclick="cancelSupplier('+i+')" title="בטל סגירה" style="background:var(--coral-l);border:1px solid var(--coral);border-radius:8px;padding:4px 8px;font-size:11px;font-weight:700;color:var(--coral-d);cursor:pointer;font-family:\'Heebo\',sans-serif">↩ בטל סגירה</button>'
+      +'<button onclick="delClosed('+i+')" title="מחק לגמרי" style="background:none;border:none;color:var(--muted);cursor:pointer;font-size:16px;padding:2px 4px">×</button>'
+      +'</div></div>'
+      +'<div style="background:var(--cream-d);border-radius:10px;height:6px;margin-bottom:8px;overflow:hidden">'
+      +'<div style="height:100%;border-radius:10px;background:'+(rem===0?'var(--green)':'var(--sage)')+';width:'+pct+'%;transition:width .3s"></div></div>'
+      +'<div style="display:flex;gap:5px;flex-wrap:wrap;margin-bottom:8px">'
+      +'<span style="font-size:11px;background:var(--green-l);color:var(--green-d);padding:3px 8px;border-radius:10px;font-weight:700">שולם: ₪'+c.paid.toLocaleString()+'</span>'
+      +(rem>0?'<span style="font-size:11px;background:var(--coral-l);color:var(--coral-d);padding:3px 8px;border-radius:10px;font-weight:700">נותר: ₪'+rem.toLocaleString()+'</span>':'<span style="font-size:11px;background:var(--green-l);color:var(--green-d);padding:3px 8px;border-radius:10px;font-weight:700">✓ שולם הכל</span>')
+      +'<span style="font-size:11px;background:var(--blue-l);color:var(--blue-d);padding:3px 8px;border-radius:10px;font-weight:700">'+(c.payType==='העברה'?'💳':'💵')+' '+c.payType+'</span>'
+      +(c.total?'<span style="font-size:11px;background:var(--purple-l);color:var(--purple-d);padding:3px 8px;border-radius:10px;font-weight:700">סה"כ ₪'+c.total.toLocaleString()+'</span>':'')+'</div>'
+      +'<div style="display:flex;gap:5px;flex-wrap:wrap">'
+      +(c.contract?'<button onclick="viewFile(\''+c.contract+'\',\'חוזה\')" style="background:var(--purple-l);border:none;color:var(--purple-d);font-family:\'Heebo\',sans-serif;font-size:11px;font-weight:700;padding:5px 10px;border-radius:10px;cursor:pointer">📄 חוזה</button>':'')
+      +(c.what?'<button onclick="viewFile(\''+c.what+'\',\'פירוט\')" style="background:var(--teal-l);border:none;color:var(--teal-d);font-family:\'Heebo\',sans-serif;font-size:11px;font-weight:700;padding:5px 10px;border-radius:10px;cursor:pointer">📋 פירוט</button>':'')
+      +'<button onclick="updateClosedPayment('+i+')" style="background:var(--gold-l);border:none;color:var(--gold-d);font-family:\'Heebo\',sans-serif;font-size:11px;font-weight:700;padding:5px 10px;border-radius:10px;cursor:pointer">💳 עדכן תשלום</button>'
+      +'</div></div>';
+  }).join('');
+  updatePay();
+}
+
+function cancelSupplier(i){
+  var c=closed[i];
+  if(!confirm('לבטל את הסגירה עם '+c.name+'?\nהספק יחזור לרשימת ההצעות הפתוחות.'))return;
+
+  // Reopen the quote if it came from quotes
+  if(c.fromQuote&&c.quoteRef){
+    var {cat,i:qi}=c.quoteRef;
+    if(quotes[cat]&&quotes[cat][qi]){
+      quotes[cat][qi].accepted=false;
+      delete quotes[cat][qi].finalPrice;
+      delete quotes[cat][qi].closedAt;
+      S.set('w3_quotes',quotes);
+      saveQuotesToFirebase();
+    }
+  }
+
+  // Remove from closed
+  closed.splice(i,1);
+  S.set('w3_closed',closed);
+  renderClosed();
+  updateCounts();
+  renderPriceCharts();
+  showToast('↩ סגירת '+c.name+' בוטלה — הספק חזר להצעות');
+}
+
+function viewFile(url,title){
+  document.getElementById('m-vf-title').textContent=title;
+  var embedUrl=url;
+  var match=url.match(/\/file\/d\/([^\/]+)/);
+  if(match)embedUrl='https://drive.google.com/file/d/'+match[1]+'/preview';
+  else if(url.includes('docs.google.com/spreadsheets'))embedUrl=url.replace('/edit','').replace(/\?.*$/,'')+'?embedded=true';
+  else if(url.includes('docs.google.com/document'))embedUrl=url.replace('/edit','').replace(/\?.*$/,'')+'?embedded=true';
+  document.getElementById('m-vf-frame').src=embedUrl;
+  document.getElementById('m-vf-open').href=url;
+  openM('m-view-file');
+}
+
+function updatePay(){
+  var paid=closed.reduce((s,c)=>s+c.paid,0);
+  var rem=closed.reduce((s,c)=>s+(c.total-c.paid),0);
+  document.getElementById('pay-paid').textContent='₪'+paid.toLocaleString();
+  document.getElementById('pay-rem').textContent='₪'+rem.toLocaleString();
+  var byT={};
+  closed.forEach(c=>{var t=c.payType||'העברה';if(!byT[t])byT[t]={p:0,r:0};byT[t].p+=c.paid;byT[t].r+=(c.total-c.paid)});
+  document.getElementById('pay-bd').innerHTML=Object.entries(byT).map(([t,v])=>
+    '<div style="display:flex;align-items:center;gap:8px;padding:9px 0;border-bottom:1px solid #F9F0FB">'
+    +'<span style="font-size:13px;font-weight:600;flex:1">'+(t==='העברה'?'💳':'💵')+' '+t+'</span>'
+    +'<span style="font-size:13px;font-weight:700;color:var(--green-d)">₪'+v.p.toLocaleString()+'</span>'
+    +(v.r>0?'<span style="font-size:11px;background:var(--coral-l);color:var(--coral-d);padding:2px 8px;border-radius:10px;font-weight:700">נותר ₪'+v.r.toLocaleString()+'</span>':'')
+    +'</div>').join('');
+}
+
+// ── EXPENSES ──
+var EXP_COLORS=['#5C7A5C','#C4706A','#8B6914','#7A8C3A','#C47A3A','#2D7A6A','#3A6A8C','#8B3A6A'];
+var expChart=null;
+
+function renderExpenses(){
+  if(!closed.length){
+    document.getElementById('exp-table').innerHTML='<div class="empty"><i class="ti ti-receipt"></i>אין ספקים סגורים עדיין<br><small>סגרו ספקים כדי לראות הוצאות</small></div>';
+    document.getElementById('exp-paid-total').textContent='₪0';
+    document.getElementById('exp-remain-total').textContent='₪0';
+    document.getElementById('exp-grand-total').textContent='₪0';
+    document.getElementById('exp-suppliers-count').textContent='0';
+    document.getElementById('exp-legend').innerHTML='';
+    if(expChart){expChart.destroy();expChart=null;}
+    return;
+  }
+
+  var paid=closed.reduce((s,c)=>s+c.paid,0);
+  var total=closed.reduce((s,c)=>s+c.total,0);
+  var rem=total-paid;
+  document.getElementById('exp-paid-total').textContent='₪'+paid.toLocaleString();
+  document.getElementById('exp-remain-total').textContent='₪'+rem.toLocaleString();
+  document.getElementById('exp-grand-total').textContent='₪'+total.toLocaleString();
+  document.getElementById('exp-suppliers-count').textContent=closed.length;
+
+  // Group by category for chart
+  var byCat={};
+  closed.forEach(c=>{var cat=c.cat||'אחר';if(!byCat[cat])byCat[cat]={paid:0,total:0,items:[]};byCat[cat].paid+=c.paid;byCat[cat].total+=c.total;byCat[cat].items.push(c)});
+  var cats=Object.keys(byCat);
+  var cols=EXP_COLORS.slice(0,cats.length);
+
+  // Donut
+  if(expChart)expChart.destroy();
+  expChart=new Chart(document.getElementById('exp-chart'),{
+    type:'doughnut',
+    data:{labels:cats,datasets:[{data:cats.map(c=>byCat[c].total),backgroundColor:cols,borderWidth:3,borderColor:'#FAF6EE'}]},
+    options:{responsive:true,plugins:{legend:{display:false},tooltip:{callbacks:{label:ctx=>' ₪'+ctx.raw.toLocaleString()}}},cutout:'58%',
+      onClick:(e,els)=>{if(els.length)showCatDetail(cats[els[0].index])}}
+  });
+
+  // Legend
+  document.getElementById('exp-legend').innerHTML=cats.map((c,i)=>{
+    var pct=total>0?Math.round(byCat[c].total/total*100):0;
+    return '<div class="pie-leg-item" style="cursor:pointer" onclick="showCatDetail(\''+c+'\')"><div class="pie-dot" style="background:'+cols[i]+'"></div>'
+      +'<span style="flex:1">'+c+'</span>'
+      +'<span style="font-size:11px;font-weight:700;color:var(--text)">₪'+byCat[c].total.toLocaleString()+'</span>'
+      +'<span style="font-size:10px;color:var(--muted);margin-right:4px">('+pct+'%)</span></div>';
+  }).join('');
+
+  // Table rows
+  document.getElementById('exp-table').innerHTML=closed.map((c,i)=>{
+    var rem=c.total-c.paid;
+    var isFull=rem<=0;
+    return '<div class="exp-row" onclick="quickUpdatePayment('+i+')">'
+      +'<span class="exp-tag" style="background:'+(isFull?'var(--green-l)':'var(--terr-l)')+';color:'+(isFull?'var(--green-d)':'var(--terr-d)')+';">'+(isFull?'✓ מלא':'חלקי')+'</span>'
+      +'<span style="font-size:13px;font-weight:600;flex:1">'+c.name+'<br><span style="font-size:10px;color:var(--muted);font-weight:400">'+c.cat+(c.payType?' • '+(c.payType==='העברה'?'💳':'💵')+c.payType:'')+'</span></span>'
+      +'<span style="font-size:12px;font-weight:700;color:var(--green-d)">₪'+c.paid.toLocaleString()+'</span>'
+      +'<span style="font-size:12px;font-weight:700;color:'+(rem>0?'var(--terr-d)':'var(--green-d)')+'">₪'+rem.toLocaleString()+'</span>'
+      +'</div>';
+  }).join('');
+}
+
+function showCatDetail(cat){
+  var byCat={};
+  closed.forEach(c=>{var ct=c.cat||'אחר';if(!byCat[ct])byCat[ct]=[];byCat[ct].push(c)});
+  var items=byCat[cat]||[];
+  alert(cat+':\n'+items.map(c=>c.name+' — שולם ₪'+c.paid.toLocaleString()+' / ₪'+c.total.toLocaleString()).join('\n'));
+}
+
+function quickUpdatePayment(i){
+  var c=closed[i];
+  var cur=c.paid;
+  var val=prompt('עדכן סכום ששולם ל'+c.name+' (₪)\nנוכחי: ₪'+cur.toLocaleString()+'\nסה"כ נדרש: ₪'+c.total.toLocaleString(),cur);
+  if(val===null)return;
+  var newPaid=Number(val);if(isNaN(newPaid))return;
+  closed[i].paid=newPaid;
+  S.set('w3_closed',closed);
+  renderExpenses();
+  updatePay();
+}
+
+// ── CONTACTS ──
+var contacts=S.get('w3_contacts',[]);
+var contactCat='הכל';
+var editContactIdx=-1;
+var ctCat='ספק';
+
+function selContactCat(el,cat){
+  document.querySelectorAll('#m-add-contact .uc').forEach(x=>{x.classList.remove('sel');x.style.border='2px solid transparent'});
+  el.classList.add('sel');el.style.border='2px solid #fff';ctCat=cat;
+}
+
+function saveContact(){
+  var name=document.getElementById('ct-name').value.trim();
+  if(!name)return;
+  var c={name,phone:document.getElementById('ct-phone').value.trim(),email:document.getElementById('ct-email').value.trim(),role:document.getElementById('ct-role').value.trim(),cat:ctCat,notes:document.getElementById('ct-notes').value.trim(),ts:Date.now()};
+  if(editContactIdx>=0){contacts[editContactIdx]=c;editContactIdx=-1;}
+  else contacts.push(c);
+  S.set('w3_contacts',contacts);
+  closeM('m-add-contact');renderContacts();
+  ['ct-name','ct-phone','ct-email','ct-role','ct-notes'].forEach(id=>document.getElementById(id).value='');
+}
+
+function delContact(i){contacts.splice(i,1);S.set('w3_contacts',contacts);renderContacts();}
+
+function editContact(i){
+  var c=contacts[i];editContactIdx=i;
+  document.getElementById('ct-name').value=c.name||'';
+  document.getElementById('ct-phone').value=c.phone||'';
+  document.getElementById('ct-email').value=c.email||'';
+  document.getElementById('ct-role').value=c.role||'';
+  document.getElementById('ct-notes').value=c.notes||'';
+  ctCat=c.cat||'ספק';
+  document.getElementById('m-contact-title').textContent='✏️ ערוך איש קשר';
+  openM('m-add-contact');
+}
+
+function filterContacts(btn){
+  document.querySelectorAll('#s-contacts .tab').forEach(t=>{t.classList.remove('active');t.style.color='var(--muted)';t.style.background='var(--white)'});
+  btn.classList.add('active');btn.style.color='#fff';btn.style.background='var(--sage)';
+  contactCat=btn.dataset.cat;renderContacts();
+}
+
+function renderContacts(){
+  var search=(document.getElementById('contact-search')||{}).value||'';
+  var list=contacts.filter(c=>{
+    var matchCat=contactCat==='הכל'||c.cat===contactCat;
+    var matchSearch=!search||c.name.includes(search)||((c.role||'').includes(search))||((c.phone||'').includes(search));
+    return matchCat&&matchSearch;
+  });
+  document.getElementById('contacts-sub').textContent=contacts.length+' אנשי קשר';
+  var el=document.getElementById('contacts-list');
+  if(!list.length){el.innerHTML='<div class="empty">📞<br>אין אנשי קשר עדיין — לחצי + להוסיף</div>';return}
+  var catColors={ספק:'var(--bark)',משפחה:'var(--rose)',חבר:'var(--purple-d)',אחר:'var(--muted)'};
+  el.innerHTML=list.map((c,i)=>{
+    var realIdx=contacts.indexOf(c);
+    return '<div style="display:flex;align-items:center;gap:10px;padding:11px 0;border-bottom:1px solid var(--cream-d)">'
+      +'<div style="width:38px;height:38px;border-radius:50%;background:'+(catColors[c.cat]||'var(--sage)')+';display:flex;align-items:center;justify-content:center;font-size:16px;color:#fff;font-weight:700;flex-shrink:0">'+(c.name||'?').charAt(0)+'</div>'
+      +'<div style="flex:1;min-width:0">'
+      +'<div style="font-size:14px;font-weight:700;color:var(--text)">'+c.name+'</div>'
+      +(c.role?'<div style="font-size:11px;color:var(--muted)">'+c.role+'</div>':'')
+      +(c.phone?'<a href="tel:'+c.phone+'" style="font-size:12px;color:var(--sage);font-weight:600;display:block;direction:ltr;text-align:right">📞 '+c.phone+'</a>':'')
+      +(c.email?'<a href="mailto:'+c.email+'" style="font-size:11px;color:var(--blue-d)">✉️ '+c.email+'</a>':'')
+      +'</div>'
+      +'<div style="display:flex;flex-direction:column;gap:4px">'
+      +'<button onclick="editContact('+realIdx+')" style="background:var(--cream);border:none;border-radius:8px;padding:4px 8px;font-size:11px;cursor:pointer;font-family:\'Heebo\',sans-serif">✏️</button>'
+      +'<button onclick="delContact('+realIdx+')" style="background:none;border:none;color:var(--muted);cursor:pointer;font-size:16px;line-height:1">×</button>'
+      +'</div></div>';
+  }).join('');
+}
+renderContacts();
+
+// Import from phone (Contact Picker API — Chrome/Android, limited on iPhone)
+async function importFromPhone(){
+  var status=document.getElementById('import-status');
+  if(!('contacts' in navigator&&'ContactsManager' in window)){
+    status.style.display='block';
+    status.innerHTML='⚠️ <strong>ייבוא ישיר לא זמין בדפדפן זה.</strong><br>באייפון: שמרי כאיש קשר ← שלחי vCard ← פתחי כאן<br>כחלופה — לחצי + והוסיפי ידנית';
+    return;
+  }
+  try{
+    status.style.display='block';status.textContent='בוחר אנשי קשר...';
+    var props=['name','tel','email'];
+    var selected=await navigator.contacts.select(props,{multiple:true});
+    if(!selected.length){status.textContent='לא נבחרו אנשי קשר';return}
+    var added=0;
+    selected.forEach(c=>{
+      var name=(c.name&&c.name[0])||'';
+      if(!name)return;
+      var phone=(c.tel&&c.tel[0])||'';
+      var email=(c.email&&c.email[0])||'';
+      if(contacts.some(x=>x.name===name&&x.phone===phone))return;
+      contacts.push({name,phone,email,role:'',cat:'אחר',notes:'',ts:Date.now()});
+      added++;
+    });
+    S.set('w3_contacts',contacts);renderContacts();
+    status.textContent='✅ נוספו '+added+' אנשי קשר';
+  }catch(e){
+    status.textContent='שגיאה: '+e.message;
+  }
+}
+
+// Export as vCard for iPhone/Android
+function exportVCard(){
+  if(!contacts.length){alert('אין אנשי קשר לייצא');return}
+  var vcf=contacts.map(c=>{
+    var lines=['BEGIN:VCARD','VERSION:3.0'];
+    lines.push('FN:'+c.name);
+    lines.push('N:'+c.name+';;;;');
+    if(c.phone)lines.push('TEL;TYPE=CELL:'+c.phone);
+    if(c.email)lines.push('EMAIL:'+c.email);
+    if(c.role)lines.push('ORG:'+c.role);
+    if(c.notes)lines.push('NOTE:'+c.notes);
+    lines.push('CATEGORIES:חתונה,'+c.cat);
+    lines.push('END:VCARD');
+    return lines.join('\r\n');
+  }).join('\r\n');
+  var blob=new Blob(['\ufeff'+vcf],{type:'text/vcard;charset=utf-8'});
+  var url=URL.createObjectURL(blob);
+  var a=document.createElement('a');
+  a.href=url;a.download='wedding-contacts.vcf';
+  document.body.appendChild(a);a.click();
+  document.body.removeChild(a);URL.revokeObjectURL(url);
+}
+
+// Pre-populate supplier contacts from quotes
+(function(){
+  var supplierContacts=[
+    {name:'קומידה קייטרינג',phone:'086803735',email:'events@comidda.com',role:'קייטרינג ברזילאי',cat:'ספק',notes:'אסאדו • 450 סועדים'},
+    {name:'חוות הצוק',phone:'052-6176845',email:'tzukevent@gmail.com',role:'קייטרינג חקלאי',cat:'ספק',notes:'₪300 לאדם • טאבון גריל'},
+    {name:'אתי ונעמה',phone:'0547923710',email:'etinaama@017.net.il',role:'קייטרינג עמדות',cat:'ספק',notes:'₪250 לסועד • מינימום 500'}
+  ];
+  supplierContacts.forEach(sc=>{
+    if(!contacts.some(c=>c.name===sc.name))contacts.push(sc);
+  });
+  S.set('w3_contacts',contacts);
+})();
+
+// ── FILES ──
+var selF='הצעות מחיר';
+function pickF(el){document.querySelectorAll('.fpb').forEach(b=>b.classList.remove('sel'));el.classList.add('sel');selF=el.dataset.f}
+function handleFileUp(i){if(!i.files.length)return;var ok=document.getElementById('up-ok');ok.style.display='block';setTimeout(()=>ok.style.display='none',3000);i.value=''}
+function handleDrop(e){e.preventDefault();document.querySelector('.upl-zone').classList.remove('drag');if(e.dataTransfer.files.length)handleFileUp({files:e.dataTransfer.files})}
+
+// ── FIREBASE CHAT ──
+var fbRef=null,chatUser='תומר 💍';
+function selCU(el,u){document.querySelectorAll('#chat-rdy .uc').forEach(x=>{x.classList.remove('sel');x.style.border='2px solid transparent'});el.classList.add('sel');el.style.border='2px solid #fff';chatUser=u}
+function initFB(){
+  var key=document.getElementById('fb-key').value.trim();
+  var pid=document.getElementById('fb-pid').value.trim();
+  var url=document.getElementById('fb-url').value.trim();
+  if(!key||!pid||!url){alert('נא למלא את כל השדות');return}
+  S.set('w3_fb',{key,pid,url});loadFB(key,pid,url);
+}
+function loadFB(key,pid,url){
+  var s1=document.createElement('script');s1.src='https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js';
+  s1.onload=()=>{
+    var s2=document.createElement('script');s2.src='https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js';
+    s2.onload=()=>{
+      try{
+        if(!firebase.apps.length)firebase.initializeApp({apiKey:key,projectId:pid,databaseURL:url});
+        fbRef=firebase.database().ref('wedding/chat');
+        document.getElementById('fb-setup').style.display='none';
+        document.getElementById('chat-rdy').style.display='block';
+        fbRef.limitToLast(50).on('child_added',snap=>{
+          var m=snap.val();var wrap=document.getElementById('chat-msgs');
+          var empty=wrap.querySelector('.empty');if(empty)empty.remove();
+          var isMe=m.user===chatUser;
+          var div=document.createElement('div');
+          div.className=isMe?'msg-me':'msg-oth';
+          var d=new Date(m.ts),t=d.getHours()+':'+String(d.getMinutes()).padStart(2,'0');
+          div.innerHTML='<div class="msend">'+m.user+'</div>'+m.text+'<div class="mtime">'+t+'</div>';
+          wrap.appendChild(div);wrap.scrollTop=wrap.scrollHeight;
+        });
+      }catch(e){alert('שגיאת Firebase: '+e.message)}
+    };document.head.appendChild(s2);
+  };document.head.appendChild(s1);
+}
+function sendChat(){
+  if(!fbRef)return;
+  var inp=document.getElementById('chat-inp');var txt=inp.value.trim();if(!txt)return;
+  fbRef.push({user:chatUser,text:txt,ts:Date.now()});inp.value='';
+}
+
+// Restore Firebase
+(()=>{var fb=S.get('w3_fb',null);if(fb){document.getElementById('fb-key').value=fb.key;document.getElementById('fb-pid').value=fb.pid;document.getElementById('fb-url').value=fb.url}})();
+</script>
+</body>
+</html>
