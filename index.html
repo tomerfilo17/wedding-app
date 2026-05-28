@@ -130,62 +130,49 @@ body{font-family:'Heebo',sans-serif;background:var(--bg);color:var(--text);min-h
   <div class="cntdwn">🌼 <span id="cdtxt">טוען...</span></div>
 </div>
 
-<!-- SETTINGS MODAL — הגדרות מלאות -->
+<!-- SETUP MODAL — פשוט וברור -->
 <div class="modal-bg" id="m-apikey" style="z-index:300">
   <div class="modal" style="border-top:4px solid var(--sage)">
-    <button class="mcl" onclick="closeM('m-apikey')">×</button>
-    <div class="modal-title">⚙️ הגדרות אפליקציה</div>
+    <div class="modal-title">👋 ברוכים הבאים!</div>
 
-    <!-- Claude API -->
-    <div style="background:var(--sage-l);border-radius:var(--rs);padding:11px;margin-bottom:14px;border:1px solid var(--sage)">
-      <div style="font-size:13px;font-weight:700;color:var(--sage-d);margin-bottom:6px">🤖 Claude API Key</div>
-      <div style="font-size:11px;color:var(--sage-d);margin-bottom:7px">לניתוח PDF אוטומטי. קבלי ב: <a href="https://console.anthropic.com/settings/keys" target="_blank" style="color:var(--sage);font-weight:700">console.anthropic.com</a></div>
-      <input type="password" class="inp" id="api-key-inp" placeholder="sk-ant-api03-..." style="direction:ltr;font-family:monospace;font-size:12px;margin-bottom:0">
+    <div style="background:var(--sage-l);border-radius:var(--rs);padding:14px;margin-bottom:14px;border:1.5px solid var(--sage)">
+      <div style="font-size:14px;font-weight:700;color:var(--sage-d);margin-bottom:6px">🔑 Gemini API Key — חינם לגמרי!</div>
+      <div style="font-size:12px;color:var(--sage-d);margin-bottom:10px;line-height:1.6">
+        Google Gemini קורא PDF אוטומטית — <strong>ללא עלות בכלל.</strong><br>
+        Firebase כבר מוגדר ✅ — נתונים משותפים בזמן אמת.
+      </div>
+      <label style="font-size:12px;font-weight:700;color:var(--sage-d);display:block;margin-bottom:5px">הדביקי את ה-Gemini API key:</label>
+      <input type="text" class="inp" id="api-key-inp" placeholder="AIzaSy..." style="direction:ltr;font-family:monospace;font-size:12px;letter-spacing:.5px">
+      <div style="background:#fff;border-radius:8px;padding:10px;font-size:11px;color:var(--text);line-height:1.9;margin-bottom:12px">
+        📋 <strong>קבלי key חינמי (2 דקות):</strong><br>
+        1. לכי ל <a href="https://aistudio.google.com/app/apikey" target="_blank" style="color:var(--sage);font-weight:700">aistudio.google.com/app/apikey</a><br>
+        2. התחברי עם Google ← <strong>Get API key</strong><br>
+        3. <strong>Create API key</strong> ← העתיקי ← הדביקי כאן
+      </div>
+      <button class="btn" style="background:var(--sage)" onclick="saveAllSettings()">✅ התחילי!</button>
     </div>
 
-    <!-- Firebase -->
-    <div style="background:var(--terr-l);border-radius:var(--rs);padding:11px;margin-bottom:14px;border:1px solid var(--terr)">
-      <div style="font-size:13px;font-weight:700;color:var(--terr-d);margin-bottom:6px">🔥 Firebase — שיתוף נתונים</div>
-      <div style="font-size:11px;color:var(--terr-d);margin-bottom:7px">נתוני הצעות המחיר ישמרו כאן ויהיו גלויים לכולם בזמן אמת</div>
-      <input type="text" class="inp" id="fb-key" placeholder="apiKey" style="direction:ltr;font-size:12px">
-      <input type="text" class="inp" id="fb-pid" placeholder="projectId" style="direction:ltr;font-size:12px">
-      <input type="text" class="inp" id="fb-url" placeholder="databaseURL (https://xxx.firebaseio.com)" style="direction:ltr;font-size:12px;margin-bottom:0">
-    </div>
+    <button onclick="closeM('m-apikey')" style="width:100%;padding:9px;border-radius:var(--rs);background:none;border:1.5px solid var(--cream-d);font-family:'Heebo',sans-serif;font-size:13px;color:var(--muted);cursor:pointer">
+      דלגי — גלישה בלי ניתוח PDF
+    </button>
 
-    <!-- Google Drive -->
-    <div style="background:var(--green-l);border-radius:var(--rs);padding:11px;margin-bottom:14px;border:1px solid var(--green)">
-      <div style="font-size:13px;font-weight:700;color:var(--green-d);margin-bottom:6px">📁 Google Drive API</div>
-      <div style="font-size:11px;color:var(--green-d);margin-bottom:7px">להעלאת PDF ישירות מהאתר לדרייב</div>
-      <input type="text" class="inp" id="gd-client-id" placeholder="Client ID (xxx.apps.googleusercontent.com)" style="direction:ltr;font-size:12px;margin-bottom:0">
-    </div>
-
-    <button class="btn" style="background:var(--sage)" onclick="saveAllSettings()">✅ שמור הגדרות והתחל</button>
-
-    <!-- Instructions -->
-    <details style="margin-top:14px">
-      <summary style="font-size:12px;font-weight:700;color:var(--sage-d);cursor:pointer">📖 הוראות הגדרה מפורטות</summary>
-      <div style="font-size:11px;color:var(--text);line-height:1.9;margin-top:10px;background:var(--cream);border-radius:var(--rs);padding:12px">
-        <strong>1. Claude API Key:</strong><br>
-        → console.anthropic.com → Settings → API Keys → Create Key<br><br>
-        <strong>2. Firebase (חינם עד 1GB):</strong><br>
-        → console.firebase.google.com → New Project → "wedding-app"<br>
-        → Realtime Database → Create → Test mode<br>
-        → Project Settings (⚙️) → Your apps → &lt;/&gt; → Copy config<br>
-        → הכנס apiKey, projectId, databaseURL<br><br>
-        <strong>3. Google Drive API:</strong><br>
-        → console.cloud.google.com → New Project<br>
-        → APIs & Services → Enable → "Google Drive API"<br>
-        → Credentials → Create → OAuth 2.0 Client ID → Web App<br>
-        → Authorized origins: כתובת האתר שלך ב-GitHub Pages<br>
-        → Copy Client ID
+    <details style="margin-top:12px">
+      <summary style="font-size:11px;color:var(--muted);cursor:pointer">🔥 Firebase (כבר מוגדר ✅)</summary>
+      <div style="margin-top:8px;background:var(--cream);border-radius:8px;padding:10px;font-size:11px;direction:ltr;color:var(--text);line-height:1.7">
+        projectId: wedding-tomer-itamar<br>
+        Realtime Database: europe-west1<br>
+        ✅ מחובר — נתונים משותפים בזמן אמת
       </div>
     </details>
   </div>
 </div>
 
-<!-- API key change button -->
+<!-- Settings button -->
 <div style="position:fixed;top:8px;left:8px;z-index:150">
-  <button onclick="openM('m-apikey')" style="background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.3);border-radius:20px;padding:4px 10px;color:#fff;font-family:'Heebo',sans-serif;font-size:10px;cursor:pointer" id="api-status-btn">⚙️ הגדרות</button>
+  <button onclick="openM('m-apikey')" id="api-status-btn"
+    style="background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.3);border-radius:20px;padding:5px 11px;color:#fff;font-family:'Heebo',sans-serif;font-size:11px;cursor:pointer;font-weight:600">
+    ⚙️ הגדרות
+  </button>
 </div>
 
 <div class="main">
@@ -901,51 +888,45 @@ function refreshGuests(){gLoaded=false;loadGuests()}
 // ══════════════════════════════════════
 // ── SETTINGS & SERVICES ──
 // ══════════════════════════════════════
-var ANTHROPIC_KEY=S.get('w3_apikey','');
-var GD_CLIENT_ID=S.get('w3_gd_client','');
+var GEMINI_KEY=S.get('w3_apikey','');
+var ANTHROPIC_KEY=GEMINI_KEY; // alias — same variable
 
-// Firebase config — מוגדר מראש
+// Firebase config — hardcoded
 var FB_DEFAULT={
   key:'AIzaSyCFWNLlL21d-gzgKhIsKqPWuvox4tn2ReI',
   pid:'wedding-tomer-itamar',
   url:'https://wedding-tomer-itamar-default-rtdb.europe-west1.firebasedatabase.app'
 };
-var fbConfig=S.get('w3_fb',null)||FB_DEFAULT;
+var fbConfig=FB_DEFAULT;
 
-// Firebase refs
-var fbApp=null, fbDB=null, fbQuotesRef=null, fbInitialized=false;
-var gapiInited=false, gisInited=false, gapiTokenClient=null;
+// Firebase state
+var fbDB=null, fbQuotesRef=null, fbInitialized=false;
 var DRIVE_FOLDER_ID='1dvbEZLjn9iTteBJv4Fhd10rqVvUTLuq2';
 
 function saveAllSettings(){
   var k=document.getElementById('api-key-inp').value.trim();
-  var fbKey=document.getElementById('fb-key').value.trim();
-  var fbPid=document.getElementById('fb-pid').value.trim();
-  var fbUrl=document.getElementById('fb-url').value.trim();
-  var gdCid=document.getElementById('gd-client-id').value.trim();
-
-  if(k){ANTHROPIC_KEY=k;S.set('w3_apikey',k);}
-  if(fbKey&&fbPid&&fbUrl){
-    fbConfig={key:fbKey,pid:fbPid,url:fbUrl};
-    S.set('w3_fb',fbConfig);
+  if(k&&k.startsWith('AIza')){
+    GEMINI_KEY=k;ANTHROPIC_KEY=k;
+    S.set('w3_apikey',k);
+    updateSettingsStatus();
+    closeM('m-apikey');
+    showToast('✅ Gemini key נשמר! מוכן לניתוח PDF 🎉');
+  } else if(k){
+    alert('Key לא תקין — חייב להתחיל ב-AIzaSy...');
+  } else {
+    closeM('m-apikey');
   }
-  if(gdCid){GD_CLIENT_ID=gdCid;S.set('w3_gd_client',gdCid);}
-
-  updateSettingsStatus();
-  closeM('m-apikey');
-
-  // Init Firebase with new config
-  if(fbConfig&&fbConfig.key)initFirebaseQuotes();
-  // Init Drive API
-  if(GD_CLIENT_ID)initDriveAPI();
 }
 
 function updateSettingsStatus(){
   var btn=document.getElementById('api-status-btn');
-  var all=ANTHROPIC_KEY&&fbConfig&&GD_CLIENT_ID;
-  var partial=ANTHROPIC_KEY||fbConfig;
-  btn.textContent=all?'⚙️ ✓ הכל מוגדר':partial?'⚙️ הגדרות חלקיות':'⚙️ הגדרות';
-  btn.style.background=all?'rgba(58,140,92,.5)':partial?'rgba(196,134,10,.4)':'rgba(255,255,255,.2)';
+  if(ANTHROPIC_KEY){
+    btn.textContent='⚙️ ✓ מוכן';
+    btn.style.background='rgba(58,140,92,.5)';
+  } else {
+    btn.textContent='⚙️ הגדר API key';
+    btn.style.background='rgba(196,112,106,.5)';
+  }
 }
 
 function checkApiKey(){
@@ -1003,93 +984,89 @@ function saveQuotesToFirebase(){
   }
 }
 
-// ── GOOGLE DRIVE API ──
-function initDriveAPI(){
-  if(!GD_CLIENT_ID||gapiInited)return;
-  // Load GAPI
+
+// ── FIREBASE QUOTES (shared real-time) ──
+function initFirebaseQuotes(){
+  if(fbInitialized)return;
   var s1=document.createElement('script');
-  s1.src='https://apis.google.com/js/api.js';
-  s1.onload=()=>{
-    gapi.load('client',async()=>{
-      await gapi.client.init({discoveryDocs:['https://www.googleapis.com/discovery/v1/apis/drive/v3/rest']});
-      gapiInited=true;
-    });
+  s1.src='https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js';
+  s1.onerror=()=>console.warn('Firebase load failed — offline mode');
+  s1.onload=function(){
+    var s2=document.createElement('script');
+    s2.src='https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js';
+    s2.onerror=()=>console.warn('Firebase DB load failed');
+    s2.onload=function(){
+      try{
+        if(!firebase.apps.length){
+          firebase.initializeApp({
+            apiKey:FB_DEFAULT.key,
+            projectId:FB_DEFAULT.pid,
+            databaseURL:FB_DEFAULT.url
+          });
+        }
+        fbDB=firebase.database();
+        fbQuotesRef=fbDB.ref('wedding/quotes');
+        fbInitialized=true;
+        // Listen for real-time changes
+        fbQuotesRef.on('value',function(snap){
+          var data=snap.val();
+          if(data&&typeof data==='object'){
+            // Merge — don't overwrite local unsaved
+            Object.keys(data).forEach(function(cat){
+              if(!quotes[cat])quotes[cat]=data[cat];
+            });
+            S.set('w3_quotes',quotes);
+            updateCounts();
+            renderPriceCharts();
+          }
+        });
+        showToast('🔥 מחובר — נתונים משותפים בזמן אמת');
+      }catch(e){
+        console.warn('Firebase connect error:',e.message);
+      }
+    };
+    document.head.appendChild(s2);
   };
   document.head.appendChild(s1);
+}
 
-  // Load GIS
-  var s2=document.createElement('script');
-  s2.src='https://accounts.google.com/gsi/client';
-  s2.onload=()=>{
-    gapiTokenClient=google.accounts.oauth2.initTokenClient({
-      client_id:GD_CLIENT_ID,
-      scope:'https://www.googleapis.com/auth/drive.file',
-      callback:''
+function saveQuotesToFirebase(){
+  if(fbQuotesRef){
+    fbQuotesRef.set(quotes).catch(function(e){
+      console.warn('Firebase save error:',e.message);
     });
-    gisInited=true;
-  };
-  document.head.appendChild(s2);
-}
-
-async function uploadToDrive(file,folderId){
-  if(!gapiInited||!gisInited){
-    showToast('⚠️ Drive API לא מוגדר — הקובץ נשמר רק מקומית');
-    return null;
   }
-  // Get token
-  return new Promise((resolve,reject)=>{
-    gapiTokenClient.callback=async(resp)=>{
-      if(resp.error){reject(resp.error);return;}
-      try{
-        var meta={name:file.name,parents:[folderId]};
-        var form=new FormData();
-        form.append('metadata',new Blob([JSON.stringify(meta)],{type:'application/json'}));
-        form.append('file',file);
-        var r=await fetch('https://www.googleapis.com/upload/drive/v3/files?uploadType=multipart',{
-          method:'POST',
-          headers:{Authorization:'Bearer '+gapi.client.getToken().access_token},
-          body:form
-        });
-        var data=await r.json();
-        resolve(data);
-      }catch(e){reject(e);}
-    };
-    gapiTokenClient.requestAccessToken({prompt:''});
-  });
 }
 
-// ── TOAST NOTIFICATION ──
+// Drive upload — simple link only (no OAuth needed)
+async function uploadToDrive(file,folderId){
+  // Without Drive API configured, just return null gracefully
+  showToast('📁 הקובץ נותח ✓ — העלי ידנית לדרייב אם תרצי');
+  return null;
+}
+
+// ── TOAST ──
 function showToast(msg,duration){
   var t=document.getElementById('toast');
-  if(!t){t=document.createElement('div');t.id='toast';
-    t.style.cssText='position:fixed;bottom:90px;right:50%;transform:translateX(50%);background:var(--text);color:#fff;padding:8px 16px;border-radius:20px;font-size:12px;font-weight:700;z-index:500;opacity:0;transition:opacity .3s;max-width:90%;text-align:center';
+  if(!t){
+    t=document.createElement('div');t.id='toast';
+    t.style.cssText='position:fixed;bottom:90px;left:50%;transform:translateX(-50%);background:#2A1F14;color:#fff;padding:9px 18px;border-radius:20px;font-size:12px;font-weight:700;z-index:999;opacity:0;transition:opacity .3s;max-width:88%;text-align:center;direction:rtl';
     document.body.appendChild(t);
   }
   t.textContent=msg;t.style.opacity='1';
-  clearTimeout(t._timer);
-  t._timer=setTimeout(()=>t.style.opacity='0',duration||3000);
+  clearTimeout(t._t);
+  t._t=setTimeout(function(){t.style.opacity='0';},duration||3000);
 }
 
-// Init on load
+// ── INIT ──
 (function(){
-  // Pre-fill settings form
-  if(ANTHROPIC_KEY)document.getElementById('api-key-inp').value=ANTHROPIC_KEY;
-  // Always pre-fill Firebase with known config
-  document.getElementById('fb-key').value=fbConfig.key||FB_DEFAULT.key;
-  document.getElementById('fb-pid').value=fbConfig.pid||FB_DEFAULT.pid;
-  document.getElementById('fb-url').value=fbConfig.url||FB_DEFAULT.url;
-  if(GD_CLIENT_ID)document.getElementById('gd-client-id').value=GD_CLIENT_ID;
-
-  updateSettingsStatus();
-
-  // Show setup only if no Claude API key
-  if(!ANTHROPIC_KEY){
-    setTimeout(()=>openM('m-apikey'),500);
-  }
-
-  // Init Firebase automatically — config is hardcoded
-  setTimeout(()=>initFirebaseQuotes(),800);
-  if(GD_CLIENT_ID)initDriveAPI();
+  try{
+    if(ANTHROPIC_KEY)document.getElementById('api-key-inp').value=ANTHROPIC_KEY;
+    updateSettingsStatus();
+    if(!ANTHROPIC_KEY)setTimeout(function(){openM('m-apikey');},600);
+    // Firebase — init after page loads, with delay
+    setTimeout(initFirebaseQuotes,1200);
+  }catch(e){console.warn('Init error:',e);}
 })();
 var DRIVE_QUOTES_FOLDER='1dvbEZLjn9iTteBJv4Fhd10rqVvUTLuq2';
 var DRIVE_EXPENSES_SHEET='1WIwiHM6ed9t1rWBSGRU-66XCZVA62dBx4NOYpo_YlcI';
@@ -1483,34 +1460,44 @@ async function handlePDFUpload(input){
 
 async function analyzePDF(file){
   var ext=file.name.split('.').pop().toLowerCase();
-  var isPdf=ext==='pdf';
   var b64=await toB64(file);
+  var isPdf=ext==='pdf';
+  var mimeType=isPdf?'application/pdf':'application/octet-stream';
 
-  var sys='אתה עוזר שמנתח הצעות מחיר ותפריטים לחתונות. קרא את המסמך והחזר JSON בלבד ללא markdown:\n'
-    +'{\n'
-    +'"name":"שם הספק/עסק",\n'
-    +'"price":0,\n'
-    +'"price_notes":"הסבר מחיר (מע\'\'מ, לפי כמה סועדים)",\n'
-    +'"includes":"מה כלול — שורה לכל פריט",\n'
-    +'"extras":"תוספות ומחיריהן",\n'
-    +'"quantities":"כמויות מנות אם יש",\n'
-    +'"conditions":"תנאי תשלום/ביטול",\n'
-    +'"doc_type":"quote או menu — סוג המסמך",\n'
-    +'"notes":"הערות חשובות"\n'
-    +'}';
+  var prompt=`אתה עוזר שמנתח הצעות מחיר ותפריטים לחתונות. קרא את המסמך והחזר JSON בלבד ללא markdown:
+{
+"name":"שם הספק/עסק",
+"price":0,
+"price_notes":"הסבר מחיר (מע''מ, לפי כמה סועדים)",
+"includes":"מה כלול — שורה לכל פריט",
+"extras":"תוספות ומחיריהן",
+"quantities":"כמויות מנות אם יש",
+"conditions":"תנאי תשלום/ביטול",
+"doc_type":"quote או menu",
+"notes":"הערות חשובות"
+}`;
 
-  var content=isPdf
-    ?[{type:'document',source:{type:'base64',media_type:'application/pdf',data:b64}},{type:'text',text:'נתח מסמך זה לחתונה. החזר JSON בלבד.'}]
-    :[{type:'text',text:'שם קובץ: '+file.name+'\nקטגוריה: '+curCat+'\nהחזר JSON בלבד.'}];
+  // Gemini 1.5 Flash — חינם לגמרי
+  var resp=await fetch(
+    'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key='+ANTHROPIC_KEY,
+    {
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({
+        contents:[{parts:[
+          {inline_data:{mime_type:mimeType,data:b64}},
+          {text:prompt}
+        ]}],
+        generationConfig:{temperature:0.1,maxOutputTokens:1000}
+      })
+    }
+  );
 
-  var resp=await fetch('https://api.anthropic.com/v1/messages',{
-    method:'POST',
-    headers:{'Content-Type':'application/json','x-api-key':ANTHROPIC_KEY,'anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true'},
-    body:JSON.stringify({model:'claude-sonnet-4-20250514',max_tokens:1000,system:sys,messages:[{role:'user',content}]})
-  });
   var data=await resp.json();
-  if(data.error)throw new Error(data.error.message||'שגיאת API');
-  var txt=(data.content&&data.content[0]?data.content[0].text:'{}').replace(/```json|```/g,'').trim();
+  if(data.error)throw new Error(data.error.message||'שגיאת Gemini API');
+  var txt=(data.candidates&&data.candidates[0]&&data.candidates[0].content&&data.candidates[0].content.parts&&data.candidates[0].content.parts[0]?data.candidates[0].content.parts[0].text:'{}');
+  txt=txt.replace(/```json|```/g,'').trim();
+
   var parsed=JSON.parse(txt);
   var incFull=[parsed.includes,parsed.quantities].filter(Boolean).join('\n');
   return{
